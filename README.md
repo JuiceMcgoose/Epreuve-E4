@@ -12,4 +12,5 @@ Some quotes:
 
 ## Intro
 
-#### Ansible est un outil libre et open-source permettant de deployer et maintenir ses applications et systhemes. Il utilise le protocol __SSH__ pour communiquer avecs les hotes distants. Les fichiers de configuration s'ecrivent en language **YAML**.
+#### Ansible est un outil libre et open-source permettant de déployer et de maintenir ses applications et ses systèmes. Il utilise le protocole _SSH_ pour communiquer avec les hôtes distants. Les fichiers de configuration s'écrivent en langage *YAML*.
+#### A suire...
