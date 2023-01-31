@@ -15,6 +15,8 @@
 ## Nextcloud/LAMP
 ...
 
+## MariaDB
+...
 
 # Working with Ansible: 
 
@@ -84,7 +86,23 @@ Les regles a mettre en place:
 > 3. SSH via le port 22 
 > 4. Bloquer tout autre connections 
 
-![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2014-55-36.png)
+
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2017-04-24.png)
+
+## Fail2ban
+
+Fail2ban agit a une couche differente de la couche reseau de niveau 3 d'un pare-feu. Celui-ci bloque les paquets du protocol tcp. Mais le port 22 est encore ouvert et des connections peuvent toujours avoir lieux. C'est la que rentre en jeu le logiciel Fail2ban en suiveillant les entrees des logs de no services. Fail2ban offre de nombreuses options pour securiser notre serveur, pour limiter les attaques par brutes-force ou DDOS.
+Les parametres a prendre en compte:
+1. bantime
+2. findtime
+3. maxretry
+4. ssh = yes
+
+
+## Firewalld
+...
+
+
 
 
 
