@@ -41,4 +41,4 @@ Some quotes:
 
 # Lab reseau
 
-![lien du lab](https://github.com/JuiceMcgoose/Stage/blob/main/lab_reseau_mehdi.drawio.png) 
+![lien du lab](https://github.com/JuiceMcgoose/assets/blob/main/lab_reseau_mehdi.drawio.png) 
