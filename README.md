@@ -1,7 +1,9 @@
 # Stage
 ## Here I will be describing the different projects et thechnologies I worked on during my internship.
 
-### Here is a link to a screenshot: [e](https://imgur.com/gallery/zPFhSqy)
+### Here is a link to a screenshot:
+[:)](https://imgur.com/gallery/zPFhSqy)
+
 Some quotes:
 > Nice!
 
@@ -49,9 +51,18 @@ Ci-dessous un schema du lab en question a mettre en place:
 ### Mise en place des differentes machines sous le noeud proxmox:
 Il sera tout d'abord question de configurer nos differentes machines pour qu'elles puissent communiquer entre elles.
 > Notre noeud proxmox se trouve sous le reseau **172.30.112.0/24** sa gw en **172.30.112.0.254**
-Le client recoit automatiquement une ip dans ce reseau via dhcp.
+Le client recoit automatiquement une ip(172.30.112.191) dans ce reseau via dhcp.
 
 Le pfSense devra avoir deux interfaces, une dans chaques reseaux. L'ip par defaut du pfSense qui nous permet d'acceder a l'interface web est 192.168.1.1, or, notre serveur dans le reseau 10.8.0.0/24, il faudra egallement changer cela.
+
+Configuration finales des interfaces pfsense.
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2011-43-40.png)
+
+Il faudra mettre en place une nouvelle route sur chacunes des machines pour permettre la communication vers les interfaces de notre pare-feu.
+Pour notre reseau Lan, c'est simple, il n'a qu'une seule route de disponible. Pour notre reseau wan en revange, il faudra bien precisser cela. 
+
+
+### Mise en place des regles de pare-feu
 
 
 
