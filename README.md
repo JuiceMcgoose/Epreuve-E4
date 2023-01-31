@@ -1,17 +1,22 @@
 # Stage
+## BIG work in progress...
 ## Here I will be describing the different projects et thechnologies I worked on during my internship.
 
 ### Here is a link to a screenshot:
 [:)](https://imgur.com/gallery/zPFhSqy)
 
-Some quotes:
-> Nice!
 
-![Screenshot from 2023-01-17 14-21-29](https://user-images.githubusercontent.com/78588391/212909851-db257362-4e3b-4d5a-b2b6-40574b4e2fb5.png)
+## Gestion de partitions: LVM
+...
+
+## Docker et DockerFile
+...
+
+## Nextcloud/LAMP
+...
 
 
 # Working with Ansible: 
-[lien pour 'become'](https://www.digitalocean.com/community/tutorials/understanding-privilege-escalation-in-ansible-playbooks)
 
 ## Intro
 
@@ -38,6 +43,7 @@ Some quotes:
 
 ![image](https://user-images.githubusercontent.com/78588391/212956562-8c69600d-78d2-41a7-9aaf-b818a09d6010.png)
 
+## Ansible: Roles 
 
 #### A suire...
 
@@ -53,16 +59,34 @@ Il sera tout d'abord question de configurer nos differentes machines pour qu'ell
 > Notre noeud proxmox se trouve sous le reseau **172.30.112.0/24** sa gw en **172.30.112.0.254**
 Le client recoit automatiquement une ip(172.30.112.191) dans ce reseau via dhcp.
 
-Le pfSense devra avoir deux interfaces, une dans chaques reseaux. L'ip par defaut du pfSense qui nous permet d'acceder a l'interface web est 192.168.1.1, or, notre serveur dans le reseau 10.8.0.0/24, il faudra egallement changer cela.
+Le pfSense devra avoir deux interfaces, une dans chaques reseaux. L'ip par defaut de l'interface pfSense qui nous permet d'acceder a l'interface web est 192.168.1.1, or, notre serveur dans le reseau 10.8.0.0/24, il faudra egallement changer cela.
 
 Configuration finales des interfaces pfsense.
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2011-43-40.png)
 
-Il faudra mettre en place une nouvelle route sur chacunes des machines pour permettre la communication vers les interfaces de notre pare-feu.
-Pour notre reseau Lan, c'est simple, il n'a qu'une seule route de disponible. Pour notre reseau wan en revange, il faudra bien precisser cela. 
+Il faudra mettre en place une nouvelle route sur chacunes des machines pour permettre la communication vers les differentes interfaces de notre pare-feu.
+Pour notre reseau Lan, c'est simple, celui-ci ne dispose que d'une seule rouete possible. Pour notre reseau Wan en revange, deux chemins de transports sont disponibles, l'un en direction du Lan, l'autre en direction du proxmox et du reseau externe. 
 
+> Routage serveur
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2014-15-19.png)
+
+> Routage client
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2014-14-22.png)
 
 ### Mise en place des regles de pare-feu
+
+Dans notre scenarios, notre client doit contacter le server pour acceder a certains services. Objectif: uniquement authoriser la connection a ces services, et depuis ce client uniquement. Nous mettrons en place certaines regles de pare-feu ayant ces effets. 
+
+Les regles a mettre en place: 
+
+> 1. Apache via les ports 80/443
+> 2. MariaDB via le port 3309
+> 3. SSH via le port 22 
+> 4. Bloquer tout autre connections 
+
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2014-55-36.png)
+
+
 
 
 
