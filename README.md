@@ -38,3 +38,7 @@ Some quotes:
 
 
 #### A suire...
+
+# Lab reseau
+
+![lien du lab](https://github.com/JuiceMcgoose/Stage/blob/main/lab_reseau_mehdi.drawio.png) 
