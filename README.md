@@ -75,6 +75,9 @@ Pour notre reseau Lan, c'est simple, celui-ci ne dispose que d'une seule rouete 
 > Routage client
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2014-14-22.png)
 
+> Passage des paquets
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2017-43-57.png)
+
 ### Mise en place des regles de pare-feu
 
 Dans notre scenarios, notre client doit contacter le server pour acceder a certains services. Objectif: uniquement authoriser la connection a ces services, et depuis ce client uniquement. Nous mettrons en place certaines regles de pare-feu ayant ces effets. 
