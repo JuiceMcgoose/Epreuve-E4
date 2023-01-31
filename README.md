@@ -40,5 +40,18 @@ Some quotes:
 #### A suire...
 
 # Lab reseau
+Il m'a par la suite ete donne un lab a faire et a deploiyer, qui m'a permit de travailler sur plusieurs aspects reseaux.
+Nous trouverons un client installee sous ![RockyLinux](https://rockylinux.org/), et un serveur hebergent differents services web sous Debian. Les deux se trouvant sur des reseaux differents. En intermediaire, un pare-feu logiciel pfSense permettra le routage et le filtrage des connections entre les deux reseaux.
+Ci-dessous un schema du lab en question a mettre en place:
 
 ![lien du lab](https://github.com/JuiceMcgoose/assets/blob/main/lab_reseau_mehdi.drawio.png) 
+
+### Mise en place des differentes machines sous le noeud proxmox:
+Il sera tout d'abord question de configurer nos differentes machines pour qu'elles puissent communiquer entre elles.
+> Notre noeud proxmox se trouve sous le reseau **172.30.112.0/24** sa gw en **172.30.112.0.254**
+Le client recoit automatiquement une ip dans ce reseau via dhcp.
+
+Le pfSense devra avoir deux interfaces, une dans chaques reseaux. L'ip par defaut du pfSense qui nous permet d'acceder a l'interface web est 192.168.1.1, or, notre serveur dans le reseau 10.8.0.0/24, il faudra egallement changer cela.
+
+
+
