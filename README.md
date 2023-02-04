@@ -96,10 +96,10 @@ Les regles a mettre en place:
 
 Fail2ban agit a une couche differente de la couche reseau de niveau 3 d'un pare-feu. Celui-ci bloque les paquets du protocol tcp. Mais le port 22 est encore ouvert et des connections peuvent toujours avoir lieux. C'est la que rentre en jeu le logiciel Fail2ban en suiveillant les entrees des logs de no services. Fail2ban offre de nombreuses options pour securiser notre serveur, pour limiter les attaques par brutes-force ou DDOS.
 Les parametres a prendre en compte:
-1. bantime
-2. findtime
-3. maxretry
-4. ssh = yes
+1. bantime 10m (definie la duree du bannisement)
+2. findtime 2m (fourchette de temps pendant laquelle les tentatives de connections ammenent a un bannisement)
+3. maxretry 3 ( nombre de tentatives maximum)
+4. ssh = yes ( s'applique sur ssh )
 
 
 ## Firewalld
