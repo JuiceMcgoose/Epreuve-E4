@@ -73,6 +73,16 @@ De cette maniere, notre page par default sera modifier de cetter maniere:
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-06-51.png)
 
+**__cliquer pour voir le deploiement du roles__**
+[![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-58-16.png)](https://asciinema.org/a/SgPUVITOapHD1PwHm0kFlAqMP)
+Les options -DC: 
+1. Pour montrer la difference dans les fichiers de configuration et lors de l'execution des taches.
+2. C Pour lancer le playbook en mode check. Cela ne va que simuller les changements, telechargements et mises en place des paquets par exemple etc. Option tres utile pour faire des tests et s'assurer que tout fonctionne bien. 
+
+Il y a une "erreur" a la fin car le playbook essaye de simulier le redemarage d'un service, nginx... Ce n'est pas possible, soit le service redemarre, soit il ne redemmare pas :)
+
+[![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2011-10-32.png)](https://asciinema.org/a/3sdVrff6tMoYslks06SHuqmO5)
+
 #### A suire...
 
 # Lab reseau
