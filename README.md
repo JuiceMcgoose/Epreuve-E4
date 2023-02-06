@@ -45,7 +45,33 @@
 
 ![image](https://user-images.githubusercontent.com/78588391/212956562-8c69600d-78d2-41a7-9aaf-b818a09d6010.png)
 
-## Ansible: Roles 
+## Un peu plus sur Ansible: Les roles
+
+Les rôles fournissent un cadre et une structure bien définis pour définir nos tâches, variables, gestionnaires, métadonnées, modèles et autres fichiers. Ainsi, nous pouvons les référencer et les appeler dans nos playbooks avec seulement quelques lignes de code, tandis que nous pouvons réutiliser les mêmes rôles sur de nombreux projets sans avoir à dupliquer notre code.
+
+Je vais montrer comment le fonctionnement des roles en installent Nginx webserver et en remplacent la page par default de Nginx sous debian par une page personnelle.
+> Structure de notre role:
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-40-19.png)
+
+1. default va contenire des variables.
+2. handlers: Sont des taches speciales qui se seront actives que via la directive "notify".
+3. tasks: Ensemble de nos taches qui se deploierons sur les machines hosts.
+4. templates: Permet de crer des nouveaux fichiers au format jinja2.
+
+> Contenue du fichier tasks: 
+  ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-49-01.png)
+  
+  "Replace default page" va modifier la page html par default en prenant pour source index.html.j2, la page personnalise.
+ 
+ > Les differentes variables qui peuvent etres appelles au seins de notre role:
+ 
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-07-08.png)
+
+Pour appeller l'une de ces variables utiliser la syntax: "{{ **nom_de_variable** }}", qui seront souvent appeller dans tasks.
+
+De cette maniere, notre page par default sera modifier de cetter maniere: 
+
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-06-51.png)
 
 #### A suire...
 
