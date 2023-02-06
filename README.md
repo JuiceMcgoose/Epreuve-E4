@@ -73,7 +73,7 @@ De cette maniere, notre page par default sera modifier de cetter maniere:
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-06-51.png)
 
-**__cliquer pour voir le deploiement du roles__**
+**__(cliquer pour voir le deploiement du roles)__**
 [![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-58-16.png)](https://asciinema.org/a/SgPUVITOapHD1PwHm0kFlAqMP)
 Les options -DC: 
 1. Pour montrer la difference dans les fichiers de configuration et lors de l'execution des taches.
@@ -81,6 +81,7 @@ Les options -DC:
 
 Il y a une "erreur" a la fin car le playbook essaye de simulier le redemarage d'un service, nginx... Ce n'est pas possible, soit le service redemarre, soit il ne redemmare pas :)
 
+(**__cliquer pour voir le deploiement du roles)__**
 [![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2011-10-32.png)](https://asciinema.org/a/3sdVrff6tMoYslks06SHuqmO5)
 
 #### A suire...
@@ -141,8 +142,13 @@ Les parametres a prendre en compte:
 ## Firewalld
 ...
 
+# Script shell TCP: 
+### Vérifie les ports TCP en écoute sur une machine locale et qui applique automatiquement des règles IPtables restreignant l'accès à ces ports depuis ma machine uniquement
 
-
+1. Ecrire des regles IPtables
+2. Ecrire un script shell correct et efficase
+3. Mettre en place un cron.
+4. Playbooks Ansible qui deploie le script sur une/des machchine(s)
 
 
 
