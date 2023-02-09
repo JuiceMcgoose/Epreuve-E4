@@ -53,10 +53,10 @@ Je vais montrer comment le fonctionnement des roles en installent Nginx webserve
 > Structure de notre role:
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-40-19.png)
 
-1. default va contenire des variables.
-2. handlers: Sont des taches speciales qui se seront actives que via la directive "notify".
-3. tasks: Ensemble de nos taches qui se deploierons sur les machines hosts.
-4. templates: Permet de crer des nouveaux fichiers au format jinja2.
+1. Default va contenire des noms de variables.
+2. Handlers: Sont des taches speciales qui se seront actives que via la directive "notify".
+3. Tasks: Ensemble de nos taches qui se deploierons sur les machines hosts.
+4. Templates: Permet de créer de nouveaux fichiers au format jinja2.
 
 > Contenue du fichier tasks: 
   ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-49-01.png)
@@ -69,7 +69,7 @@ Je vais montrer comment le fonctionnement des roles en installent Nginx webserve
 
 Pour appeller l'une de ces variables utiliser la syntax: "{{ **nom_de_variable** }}", qui seront souvent appeller dans tasks.
 
-De cette maniere, notre page par default sera modifier de cetter maniere: 
+Notre page par default sera modifier de cette maniere: 
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-06-51.png)
 
@@ -102,7 +102,7 @@ Configuration finales des interfaces pfsense.
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2011-43-40.png)
 
 Il faudra mettre en place une nouvelle route sur chacune des machines pour permettre la communication vers les différentes interfaces de notre pare-feu.
-Pour notre réseau LAN, c'est simple, celui-ci ne dispose que d'une seule route possible. Pour notre réseau WAN en revanche, deux chemins de transports sont disponibles, l'un en direction du LAN, l'autre en direction du Proxmox et du réseau externe. 
+Pour notre réseau LAN, celui-ci ne dispose que d'une seule route possible. Pour notre réseau WAN en revanche, deux chemins de transports sont disponibles, l'un en direction du LAN, l'autre en direction du Proxmox et du réseau externe. 
 
 > Routage serveur
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2014-15-19.png)
@@ -122,7 +122,7 @@ Les regles a mettre en place:
 > 1. Apache via les ports 80/443
 > 2. MariaDB via le port 3309
 > 3. SSH via le port 22 
-> 4. Bloquer tout autre connections 
+> 4. Bloquer toute autre connections 
 
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2017-04-24.png)
