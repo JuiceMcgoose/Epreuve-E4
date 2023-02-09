@@ -87,24 +87,22 @@ Il y a une "erreur" a la fin car le playbook essaye de simulier le redemarage d'
 #### A suire...
 
 # Lab reseau
-Il m'a par la suite ete donne un lab a faire et a deploiyer, qui m'a permit de travailler sur plusieurs aspects reseaux.
-Nous trouverons un client installee sous ![RockyLinux](https://rockylinux.org/), et un serveur hebergent differents services web sous Debian. Les deux se trouvant sur des reseaux differents. En intermediaire, un pare-feu logiciel pfSense permettra le routage et le filtrage des connections entre les deux reseaux.
-Ci-dessous un schema du lab en question a mettre en place:
-
+Nous trouverons un client installé sous ![RockyLinux](https://rockylinux.org/), et un serveur hébergent différents services web sous Debian. Les deux se trouvant sur des réseaux différents. En intermédiaire, un pare-feu logiciel pfSense permettra le routage et le filtrage des connexions entre les deux réseaux.
+Ci-dessous un schéma du lab en question à mettre en place :
 ![lien du lab](https://github.com/JuiceMcgoose/assets/blob/main/lab_reseau_mehdi.drawio.png) 
 
-### Mise en place des differentes machines sous le noeud proxmox:
-Il sera tout d'abord question de configurer nos differentes machines pour qu'elles puissent communiquer entre elles.
+### Mise en place des différentes machines sous le nœud Proxmox:
+Il sera tout d'abord question de configurer nos différentes machines pour qu'elles puissent communiquer entre elles.
 > Notre noeud proxmox se trouve sous le reseau **172.30.112.0/24** sa gw en **172.30.112.0.254**
-Le client recoit automatiquement une ip(172.30.112.191) dans ce reseau via dhcp.
+Le client reçoit automatiquement une IP(172.30.112.191) dans ce réseau via DHCP.
 
-Le pfSense devra avoir deux interfaces, une dans chaques reseaux. L'ip par defaut de l'interface pfSense qui nous permet d'acceder a l'interface web est 192.168.1.1, or, notre serveur dans le reseau 10.8.0.0/24, il faudra egallement changer cela.
+Le pfSense devra avoir deux interfaces, une dans chaque réseau. L'IP par défaut de l'interface pfSense qui nous permet d'accéder à l'interface web est 192.168.1.1, or, notre serveur dans le réseau 10.8.0.0/24, il faudra également changer cela.
 
 Configuration finales des interfaces pfsense.
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2011-43-40.png)
 
-Il faudra mettre en place une nouvelle route sur chacunes des machines pour permettre la communication vers les differentes interfaces de notre pare-feu.
-Pour notre reseau Lan, c'est simple, celui-ci ne dispose que d'une seule rouete possible. Pour notre reseau Wan en revange, deux chemins de transports sont disponibles, l'un en direction du Lan, l'autre en direction du proxmox et du reseau externe. 
+Il faudra mettre en place une nouvelle route sur chacune des machines pour permettre la communication vers les différentes interfaces de notre pare-feu.
+Pour notre réseau LAN, c'est simple, celui-ci ne dispose que d'une seule route possible. Pour notre réseau WAN en revanche, deux chemins de transports sont disponibles, l'un en direction du LAN, l'autre en direction du Proxmox et du réseau externe. 
 
 > Routage serveur
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2014-15-19.png)
@@ -117,7 +115,7 @@ Pour notre reseau Lan, c'est simple, celui-ci ne dispose que d'une seule rouete 
 
 ### Mise en place des regles de pare-feu
 
-Dans notre scenarios, notre client doit contacter le server pour acceder a certains services. Objectif: uniquement authoriser la connection a ces services, et depuis ce client uniquement. Nous mettrons en place certaines regles de pare-feu ayant ces effets. 
+Dans notre scenario, notre client doit contacter le serveur pour accéder à certains services. Objectif : uniquement autoriser la connexion à ces services, et depuis ce client uniquement. Nous mettrons en place certaines règles de pare-feu ayant ces effets. 
 
 Les regles a mettre en place: 
 
@@ -131,25 +129,25 @@ Les regles a mettre en place:
 
 ## Fail2ban
 
-Fail2ban agit a une couche differente de la couche reseau de niveau 3 d'un pare-feu. Celui-ci bloque les paquets du protocol tcp. Mais le port 22 est encore ouvert et des connections peuvent toujours avoir lieux. C'est la que rentre en jeu le logiciel Fail2ban en suiveillant les entrees des logs de no services. Fail2ban offre de nombreuses options pour securiser notre serveur, pour limiter les attaques par brutes-force ou DDOS.
+Fail2ban agit à une couche différente de la couche réseau de niveau 3 d'un pare-feu. Celui-ci bloque les paquets du protocole TCP. Mais le port 22 est encore ouvert et des connexions peuvent toujours avoir lieux. C'est là que rentre en jeu le logiciel Fail2ban en surveillant les entrées des logs de no services. Fail2ban offre de nombreuses options pour sécuriser notre serveur, pour limiter les attaques par brutes-force ou DDOS.
+
 Les parametres a prendre en compte:
-1. bantime 10m (definie la duree du bannisement)
-2. findtime 2m (fourchette de temps pendant laquelle les tentatives de connections ammenent a un bannisement)
-3. maxretry 3 ( nombre de tentatives maximum)
-4. ssh = yes ( s'applique sur ssh )
+1. bantime 10m (Définie la durée du bannissement)
+2. findtime 2m (Fourchette de temps pendant lequel les tentatives de connections amènent à un bannissement)
+3. maxretry 3 (nombre de tentatives maximum)
+4. ssh = yes ( S'applique sur ssh )
 
 
 ## Firewalld
 ...
 
 # Script shell TCP: 
-### Vérifie les ports TCP en écoute sur une machine locale et qui applique automatiquement des règles IPtables restreignant l'accès à ces ports depuis ma machine uniquement
+### Vérifie les ports TCP en écoute sur une machine distante et qui applique automatiquement des règles IPtables autorisant l'accès à ces ports depuis une un certain groupe de machines uniquement.
 
-1. Ecrire des regles IPtables
-2. Ecrire un script shell correct et efficase
+1. Écrire des règles IPtables des règles IPtables
+2. Écrire des règles IPtables un script shell correct et efficace
 3. Mettre en place un cron.
-4. Playbooks Ansible qui deploie le script sur une/des machchine(s)
-
+4. Playbooks Ansible qui déploie le script sur un groupe de machines
 
 
 
