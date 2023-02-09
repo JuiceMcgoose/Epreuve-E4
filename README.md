@@ -2,7 +2,6 @@
 ## BIG work in progress...
 ## Here I will be describing the different projects et thechnologies I worked on during my internship.
 
-### Here is a link to a screenshot:
 [:)](https://imgur.com/gallery/zPFhSqy)
 
 
@@ -25,7 +24,7 @@
 #### Ansible est un outil libre et open-source permettant de déployer et de maintenir ses applications et ses systèmes. Il utilise le protocole _SSH_ pour communiquer avec les hôtes distants. Les fichiers de configuration s'écrivent en langage *YAML*.
 
 ## L'inventaire
-#### Pour commencer il nous faudrat une liste de machine distantes sur lesquelles deployer no Playbooks L'inventaire des machines se fais sous: 
+#### Ansible vas lesquelles deployer no Playbooks L'inventaire des machines se fais sous: 
 > /etc/ansible/hosts
 [](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png![image](https://user-images.githubusercontent.com/78588391/212951194-754ee83f-83e6-4772-b88e-f1038b4817bb.png)
 #### Nous pouvons regrouper les machines sous differents groupes, ici, il n'y en a qu'un. Notre Playbook pourra specifiquement pointer vers l'un de ces groupes, ou sur tout l'inventaire.  
@@ -37,7 +36,7 @@
 
 ![image](https://user-images.githubusercontent.com/78588391/212954775-68950203-497d-437b-9d17-4587a7b812ba.png)
 
-#### C'est apres le "tasks:" que les taches se deploient et executent leurs actions. 
+#### Apres "tasks:" les taches se deploient et executent leurs actions. 
 1. name: Description simple de la tache
 2. Un module. Ce qui vient apres sont les parametres du module. 
 3. Pour la seconde tache ---> script: indique que c'est un script qui vas s'executer.  
@@ -47,9 +46,9 @@
 
 ## Un peu plus sur Ansible: Les roles
 
-Les rôles fournissent un cadre et une structure bien définis pour définir nos tâches, variables, gestionnaires, métadonnées, modèles et autres fichiers. Ainsi, nous pouvons les référencer et les appeler dans nos playbooks avec seulement quelques lignes de code, tandis que nous pouvons réutiliser les mêmes rôles sur de nombreux projets sans avoir à dupliquer notre code.
+Les rôles fournissent un cadre et une structure bien définis pour définir nos tâches, variables,modèles et autres fichiers. Ainsi, nous pouvons les référencer et les appeler dans nos playbooks avec seulement quelques lignes de code, tandis que nous pouvons réutiliser les mêmes rôles sur de nombreux projets sans avoir à dupliquer notre code.
 
-Je vais montrer comment le fonctionnement des roles en installent Nginx webserver et en remplacent la page par default de Nginx sous debian par une page personnelle.
+Demonstration du fonctionnement des roles en installent Nginx webserver et en remplacent la page par default de Nginx sous debian par une page modifie.
 > Structure de notre role:
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-40-19.png)
 
@@ -125,7 +124,7 @@ Les regles a mettre en place:
 > 4. Bloquer toute autre connections 
 
 
-![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2017-04-24.png)
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2016-59-13.png)
 
 ## Fail2ban
 
@@ -142,12 +141,24 @@ Les parametres a prendre en compte:
 ...
 
 # Script shell TCP: 
-### Vérifie les ports TCP en écoute sur une machine distante et qui applique automatiquement des règles IPtables autorisant l'accès à ces ports depuis une un certain groupe de machines uniquement.
+### Vérifie les ports TCP en écoute sur une machine distante et qui applique une serie de règles IPtables laissant les connexions ouvertes sur ces ports, depuis une liste de machine authorises.
 
-1. Écrire des règles IPtables des règles IPtables
-2. Écrire des règles IPtables un script shell correct et efficace
-3. Mettre en place un cron.
-4. Playbooks Ansible qui déploie le script sur un groupe de machines
+1. Écrire des règles IPtables 
+2. Écrire un script shell simple et efficace
+3. Playbooks Ansible qui déploie le script sur un groupe de machines
+4. Mettre en place un cron.
+
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-19-03.png)
+
+1. __machine_ip__ est un tableau contenant les machines autorisees.
+2. __cible__: Machine sur laquelles les access seront restraints via IPtables.
+3. __var__: Va contenire le resultat de notre script **awk**.
+
+
+  **var=$(ss -tl4 | awk '/^LISTEN/ { split($4, a, ":"); print a[2];}')**  
+  AWK est un language utilise pour la manipulation, modification et triage de fichier.
+ 
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-43-01.png)
 
 
 
