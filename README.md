@@ -9,7 +9,12 @@ Proxmox est un logiciel libre de visualisation et de gestion de parc informatiqu
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
 ## Gestion de partitions: LVM
-...
+
+La gestion des volumes logiques (LVM) est un système de gestion des disques utilisé pour gérer et organiser l'espace disque sur un système Linux. Il permet de créer des partitions virtuelles qui peuvent être redimensionnées et déplacées de manière dynamique, sans avoir à arrêter le système ou à démonter un système de fichiers.
+Les trois parties centralles de LVM:
+
+1. Volumes physiques (PV) : La première étape de l'utilisation de LVM consiste à créer un ou plusieurs volumes physiques (PV) sur le disque. Il s'agit de partitions de disque réelles qui seront utilisées pour stocker des données.
+2. Groupe de volume (GV) : Sont des 
 
 ## Docker et DockerFile
 ...
@@ -25,7 +30,7 @@ __(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre système d'exploi
 ## RockyLinux/cockpit
 ...
 Cockpit est un logiciel de gestion de serveur avec interface web. Pour les utilisateurs  aux capacités techniques limitées, il leur permet de ne pas avoir à utiliser l'interface de commandes, mais d'avoir néanmoins une interface plus lisible et légère que d'installer un environnement de bureau sur le serveur. 
-Le paquet doit être localement installé sur le serveur/client avant de pouvoir accéder a l'interface web (machine-IP :9090).
+Le paquet doit être localement installé sur le serveur/client avant de pouvoir accéder a l'interface web (machine-IP :9090). J'installerais egallement un module de stockage complementaire, qui n'est pas la par defaut, via un role Ansible.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-47-52.png)
 
@@ -36,7 +41,7 @@ Le paquet doit être localement installé sur le serveur/client avant de pouvoir
 #### Ansible est un outil libre et open-source permettant de déployer et de maintenir ses applications et ses systèmes. Il utilise le protocole _SSH_ pour communiquer avec les hôtes distants. Les fichiers de configuration s'écrivent en langage *YAML*.
 
 ## L'inventaire
-#### Les machines hôtes sur lesquelles s'errons déployées les playbooks sont stockés sous le fichier /ansible/hosts. Elles peuvent être regroupées sous des groupes qui seront ensuite faits référence dans nos playbooks.
+#### Les machines hôtes sur lesquelles serrons déployées les playbooks sont stockés sous le fichier /ansible/hosts. Elles peuvent être regroupées sous des groupes qui seront ensuite faits référence dans nos playbooks.
 
 ![](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png)
 
@@ -99,6 +104,13 @@ Il y a une "erreur" à la fin, car le playbook essaye de simuler le redémarrage
 
 (**__cliquer pour voir le deploiement du roles)__**
 [![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2011-10-32.png)](https://asciinema.org/a/3sdVrff6tMoYslks06SHuqmO5)
+
+### Role et variables Ansible
+
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2014-59-41.png)
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2015-00-01.png)
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2014-59-05.png)
+
 
 #### A suire...
 
