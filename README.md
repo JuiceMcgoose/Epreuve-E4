@@ -2,9 +2,12 @@
 ## BIG work in progress...
 ## Here I will be describing the different projects and thechnologies I worked on during my internship.
 
-[:)](https://imgur.com/gallery/zPFhSqy)
+![:)](https://imgur.com/gallery/zPFhSqy)
 
+## Hyperviseur Proxmox
+Proxmox est un loggiciel libre de virualisation et de gestion de parc informatique. J'ai installer Proxmox sur un serveur sur lequel j'efectuerais mes differentes taches et projet tout au long de ce stage.
 
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
 ## Gestion de partitions: LVM
 ...
 
@@ -12,11 +15,21 @@
 ...
 
 ## Nextcloud/LAMP Stack
-Nextcloud est un service de partage de fichiers libre et open-source qui nous donne controle sur nos fichiers, respect de nos documents prives et conrole total car auto-geres. Pour installer le service Nextcloud il me sera necessaire d'installer une pille de technologies complementaire __(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre system d'exploitation, Apache notre serveur web, mariaDB le serveur de base de donnes, PHP le language cote serveur gerant les pages dynamiques.  
+Nextcloud est un service de partage de fichiers libre et open-source qui nous donne controle sur nos fichiers, respect de nos documents prives et une forme avance de controle car auto-geres. Pour installer le service Nextcloud il me sera necessaire d'installer une pille de technologies complementaire __(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre system d'exploitation, Apache notre serveur web, mariaDB le serveur de base de donnes, PHP le language cote serveur gerant les pages dynamiques.  
 
 
 ## MariaDB
 ...
+
+## Cockpit
+...
+
+## RockyLinux/cockpit
+...
+Cockpit est un logicielle de gestion de serveur avec interface web. Pour les utilisateur capacites techniques limites, il leur permet de me pas avoir a utiliser le cli, mais d'avoir neanmoins une interface plus lisible et legere que d'installer un environnement de bureau sur le serveur. 
+Le paquet doit etre localement sur installer le server/client avant de pouvoir accerder a l'interface web(machine-ip:9090)
+
+![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-47-52.png)
 
 # Working with Ansible: 
 
@@ -26,8 +39,8 @@ Nextcloud est un service de partage de fichiers libre et open-source qui nous do
 
 ## L'inventaire
 #### Les machines hosts sur lesquelles seronts deployees les playbooks sont stockes sous le fichier /ansible/hosts. Elles peuvent etres regroupees sous des groupes qui seront ensuite fait reference dans nos playbooks.
-> /etc/ansible/hosts
-![](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png![image](https://user-images.githubusercontent.com/78588391/212951194-754ee83f-83e6-4772-b88e-f1038b4817bb.png)
+
+![](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png)
 
 
 ### Playbooks
@@ -148,10 +161,14 @@ Les parametres a prendre en compte:
 # Script shell TCP: 
 ### Vérifie les ports TCP en écoute sur une machine distante et qui applique une serie de règles IPtables laissant les connexions ouvertes sur ces ports, depuis une liste de machine authorises.
 
+#### Il nous faudrat:
+
 1. Écrire des règles IPtables 
 2. Écrire un script shell simple et efficace
-3. Playbooks Ansible qui déploie le script sur un groupe de machines
-4. Mettre en place un cron.
+3. Faire Playbooks Ansible qui déploie le script sur le groupe de machines
+4. Ecrire et mettre en place un cron.
+
+IPTables est un logiciel de pare-feux inclut dans le Kernel, permettant de mettre en place des regles de traffic entrant et sortant.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-19-03.png)
 
