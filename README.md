@@ -11,8 +11,9 @@
 ## Docker et DockerFile
 ...
 
-## Nextcloud/LAMP
-...
+## Nextcloud/LAMP Stack
+Nextcloud est un service de partage de fichiers libre et open-source qui nous donne controle sur nos fichiers, respect de nos documents prives et conrole total car auto-geres. Pour installer le service Nextcloud il me sera necessaire d'installer une pille de technologies complementaire __(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre system d'exploitation, Apache notre serveur web, mariaDB le serveur de base de donnes, PHP le language cote serveur gerant les pages dynamiques.  
+
 
 ## MariaDB
 ...
@@ -36,7 +37,7 @@ Les playbooks sont constitues de modules qui executent automatiquement des tache
 Ci-dessous un example de Playbook constitue d'un seul "play" et de deux taches.
 ![image](https://user-images.githubusercontent.com/78588391/212954775-68950203-497d-437b-9d17-4587a7b812ba.png)
 
-#### C'est apres la directve task que notre les actions pour notre tache vont pouvoir etre definis.
+#### C'est apres la directive task que les actions pour notre tache vont etre definis.
 1. name: Description simple de la tache
 2. ansible.builtin.package: Module Ansible qui va automatiquement utiliser le module specifique au gestionaire de paquet de l'hote(ansible.builtin.yum, ansible.builtin.aot etc). Pratique car nous evite donc de definir le gestionaire de paquets de chacunes des distributions.
 3. name: nom du paquet a installer
@@ -44,7 +45,7 @@ Ci-dessous un example de Playbook constitue d'un seul "play" et de deux taches.
 5. Pour la seconde tache ---> script: indique que c'est un script qui vas s'executer.  
 (le script en question) 
 
-Ce play contient egalement un seconde tache qui execute un script bash sur l'hote. Nous utilisont le module script qui prand le nom du script et ses possbiles parametres.
+Ce play contient egalement un seconde tache qui execute un script bash sur l'hote. Nous utilisont le module script qui prand le nom du script et meme, des parametres si besoin.
 
 ![image](https://user-images.githubusercontent.com/78588391/212956562-8c69600d-78d2-41a7-9aaf-b818a09d6010.png)
 
