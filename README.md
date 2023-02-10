@@ -2,8 +2,6 @@
 ## BIG work in progress...
 ## Here I will be describing the different projects and thechnologies I worked on during my internship.
 
-[:)](https://imgur.com/gallery/zPFhSqy)
-
 ## Hyperviseur Proxmox
 Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
 
@@ -14,7 +12,10 @@ La gestion des volumes logiques (LVM) est un système de gestion des disques uti
 Les trois parties centralles de LVM:
 
 1. Volumes physiques (PV) : La première étape de l'utilisation de LVM consiste à créer un ou plusieurs volumes physiques (PV) sur le disque. Il s'agit de partitions de disque réelles qui seront utilisées pour stocker des données.
-2. Groupe de volume (GV) : Sont des 
+2. Groupe de volume (GV) : Sont des collections de volumes physiques depuis lesquelles nos volumes logiques seront creers.
+3. Volumes logiques (LV) : Un volume logique est un périphérique de stockage virtuel qu'un système de fichiers peut utiliser.
+
+Tache : Il sera question d'implémenter un RAID1 sous LVM sur un serveur avec disque linéaire configuré avec RAID. Il sera question de créer un nouveau volume physique que nous convertirons par la suite en volume RAID et de re-attacher ce volume au volume déjà existant.
 
 ## Docker et DockerFile
 ...
@@ -24,12 +25,9 @@ Nextcloud est un service de partage de fichiers libre et open-source qui nous do
 __(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
 
 
-## MariaDB
-...
-
 ## RockyLinux/cockpit
 ...
-Cockpit est un logiciel de gestion de serveur avec interface web. Pour les utilisateurs  aux capacités techniques limitées, il leur permet de ne pas avoir à utiliser l'interface de commandes, mais d'avoir néanmoins une interface plus lisible et légère que d'installer un environnement de bureau sur le serveur. 
+Cockpit est un logiciel de gestion de serveur avec interface web. Pour les utilisateurs, il leur permet d'avoir acceer a un tableau de bord sur la machine, et de ne pas avoir à utiliser l'interface de commandes, mais d'avoir néanmoins une interface plus lisible et légère que d'installer un environnement de bureau sur le serveur. 
 Le paquet doit être localement installé sur le serveur/client avant de pouvoir accéder a l'interface web (machine-IP :9090). J'installerais egallement un module de stockage complementaire, qui n'est pas la par defaut, via un role Ansible.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-47-52.png)
@@ -194,6 +192,8 @@ IPTables est un logiciel libre de pare-feux inclut dans le Kernel, permettant de
   
 La commande iptables -L -v -n permet de voir quelles règles sont définies pour la table filter qui est la table par défaut lorsque non spécifiée. 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-43-01.png)
+
+[:)](https://imgur.com/gallery/zPFhSqy)
 
 
 
