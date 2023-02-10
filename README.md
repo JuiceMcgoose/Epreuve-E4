@@ -1,6 +1,6 @@
 # Stage
 ## BIG work in progress...
-## Here I will be describing the different projects et thechnologies I worked on during my internship.
+## Here I will be describing the different projects and thechnologies I worked on during my internship.
 
 [:)](https://imgur.com/gallery/zPFhSqy)
 
@@ -24,23 +24,27 @@
 #### Ansible est un outil libre et open-source permettant de déployer et de maintenir ses applications et ses systèmes. Il utilise le protocole _SSH_ pour communiquer avec les hôtes distants. Les fichiers de configuration s'écrivent en langage *YAML*.
 
 ## L'inventaire
-#### Ansible vas lesquelles deployer no Playbooks L'inventaire des machines se fais sous: 
+#### Les machines hosts sur lesquelles seronts deployees les playbooks sont stockes sous le fichier /ansible/hosts. Elles peuvent etres regroupees sous des groupes qui seront ensuite fait reference dans nos playbooks.
 > /etc/ansible/hosts
-[](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png![image](https://user-images.githubusercontent.com/78588391/212951194-754ee83f-83e6-4772-b88e-f1038b4817bb.png)
-#### Nous pouvons regrouper les machines sous differents groupes, ici, il n'y en a qu'un. Notre Playbook pourra specifiquement pointer vers l'un de ces groupes, ou sur tout l'inventaire.  
+![](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png![image](https://user-images.githubusercontent.com/78588391/212951194-754ee83f-83e6-4772-b88e-f1038b4817bb.png)
+
 
 ### Playbooks
-#### Il lance une certaine série d'activités à êtres exécutées sur les machines. Un playbook se divise en plusieurs parties :
-1. Le Play : Qui définissent une certaine sériée d'activités à êtres exécutées sur les machines. 
-2. Les taches : Sont les actions qui seront effectuer sur les serveurs. Cela peut être un script, une commande, une action sur un service tournant, etc. 
+#### Un playbook est un plan d'automatisation de taches. Les Playbooks Ansible sont exécutés sur un groupte ou ensemble de groupe d'hôtes, qui constituent ensemble un inventaire Ansible. Un playbook se divise en plusieurs parties.
+Les playbooks sont constitues de modules qui executent automatiquement des taches sur notres group d'hotes.
 
+Ci-dessous un example de Playbook constitue d'un seul "play" et de deux taches.
 ![image](https://user-images.githubusercontent.com/78588391/212954775-68950203-497d-437b-9d17-4587a7b812ba.png)
 
-#### Apres "tasks:" les taches se deploient et executent leurs actions. 
+#### C'est apres la directve task que notre les actions pour notre tache vont pouvoir etre definis.
 1. name: Description simple de la tache
-2. Un module. Ce qui vient apres sont les parametres du module. 
-3. Pour la seconde tache ---> script: indique que c'est un script qui vas s'executer.  
+2. ansible.builtin.package: Module Ansible qui va automatiquement utiliser le module specifique au gestionaire de paquet de l'hote(ansible.builtin.yum, ansible.builtin.aot etc). Pratique car nous evite donc de definir le gestionaire de paquets de chacunes des distributions.
+3. name: nom du paquet a installer
+4. state:  parametre qui definit si il faut installer (present) ou supprimer le paquet (absent)
+5. Pour la seconde tache ---> script: indique que c'est un script qui vas s'executer.  
 (le script en question) 
+
+Ce play contient egalement un seconde tache qui execute un script bash sur l'hote. Nous utilisont le module script qui prand le nom du script et ses possbiles parametres.
 
 ![image](https://user-images.githubusercontent.com/78588391/212956562-8c69600d-78d2-41a7-9aaf-b818a09d6010.png)
 
