@@ -15,19 +15,17 @@ Proxmox est un loggiciel libre de virualisation et de gestion de parc informatiq
 ...
 
 ## Nextcloud/LAMP Stack
-Nextcloud est un service de partage de fichiers libre et open-source qui nous donne controle sur nos fichiers, respect de nos documents prives et une forme avance de controle car auto-geres. Pour installer le service Nextcloud il me sera necessaire d'installer une pille de technologies complementaire __(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre system d'exploitation, Apache notre serveur web, mariaDB le serveur de base de donnes, PHP le language cote serveur gerant les pages dynamiques.  
+Nextcloud est un service de partage de fichiers libre et open-source qui nous donne contrôle sur nos fichiers, respect de nos documents privés et une forme avance de contrôle, car autogérés. Pour installer le service Nextcloud, il me sera nécessaire d'installer une pile de technologies complémentaires
+__(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
 
 
 ## MariaDB
 ...
 
-## Cockpit
-...
-
 ## RockyLinux/cockpit
 ...
-Cockpit est un logicielle de gestion de serveur avec interface web. Pour les utilisateur capacites techniques limites, il leur permet de me pas avoir a utiliser le cli, mais d'avoir neanmoins une interface plus lisible et legere que d'installer un environnement de bureau sur le serveur. 
-Le paquet doit etre localement sur installer le server/client avant de pouvoir accerder a l'interface web(machine-ip:9090)
+Cockpit est un logiciel de gestion de serveur avec interface web. Pour les utilisateurs  aux capacités techniques limitées, il leur permet de ne pas avoir à utiliser l'interface de commandes, mais d'avoir néanmoins une interface plus lisible et légère que d'installer un environnement de bureau sur le serveur. 
+Le paquet doit être localement installé sur le serveur/client avant de pouvoir accéder a l'interface web (machine-IP :9090).
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-47-52.png)
 
@@ -38,14 +36,15 @@ Le paquet doit etre localement sur installer le server/client avant de pouvoir a
 #### Ansible est un outil libre et open-source permettant de déployer et de maintenir ses applications et ses systèmes. Il utilise le protocole _SSH_ pour communiquer avec les hôtes distants. Les fichiers de configuration s'écrivent en langage *YAML*.
 
 ## L'inventaire
-#### Les machines hosts sur lesquelles seronts deployees les playbooks sont stockes sous le fichier /ansible/hosts. Elles peuvent etres regroupees sous des groupes qui seront ensuite fait reference dans nos playbooks.
+#### Les machines hôtes sur lesquelles s'errons déployées les playbooks sont stockés sous le fichier /ansible/hosts. Elles peuvent être regroupées sous des groupes qui seront ensuite faits référence dans nos playbooks.
 
 ![](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png)
 
 
 ### Playbooks
-#### Un playbook est un plan d'automatisation de taches. Les Playbooks Ansible sont exécutés sur un groupte ou ensemble de groupe d'hôtes, qui constituent ensemble un inventaire Ansible. Un playbook se divise en plusieurs parties.
-Les playbooks sont constitues de modules qui executent automatiquement des taches sur notres group d'hotes.
+#### Un playbook est un plan d'automatisation de taches. Les Playbooks Ansible sont exécutés sur un groupe ou ensemble de groupe d'hôtes, qui constituent ensemble notre inventaire Ansible. Un playbook se divise en plusieurs parties.
+
+Les playbooks sont constitués de modules qui exécutent automatiquement des tâches sur notre groupe d'hôtes.
 
 Ci-dessous un example de Playbook constitue d'un seul "play" et de deux taches.
 ![image](https://user-images.githubusercontent.com/78588391/212954775-68950203-497d-437b-9d17-4587a7b812ba.png)
@@ -58,7 +57,7 @@ Ci-dessous un example de Playbook constitue d'un seul "play" et de deux taches.
 5. Pour la seconde tache ---> script: indique que c'est un script qui vas s'executer.  
 (le script en question) 
 
-Ce play contient egalement un seconde tache qui execute un script bash sur l'hote. Nous utilisont le module script qui prand le nom du script et meme, des parametres si besoin.
+Ce play contient également une seconde tache qui exécute un script bash sur l'hôte. Nous utilisons le module script qui prend le nom du script et même, des paramètres si besoin.
 
 ![image](https://user-images.githubusercontent.com/78588391/212956562-8c69600d-78d2-41a7-9aaf-b818a09d6010.png)
 
@@ -66,11 +65,11 @@ Ce play contient egalement un seconde tache qui execute un script bash sur l'hot
 
 Les rôles fournissent un cadre et une structure bien définis pour définir nos tâches, variables,modèles et autres fichiers. Ainsi, nous pouvons les référencer et les appeler dans nos playbooks avec seulement quelques lignes de code, tandis que nous pouvons réutiliser les mêmes rôles sur de nombreux projets sans avoir à dupliquer notre code.
 
-Demonstration du fonctionnement des roles en installent Nginx webserver et en remplacent la page par default de Nginx sous debian par une page modifie.
+Démonstration du fonctionnement des rôles en installent Nginx webserver et en remplacent la page par défaut de Nginx sous Debian par une page modifiée.
 > Structure de notre role:
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-40-19.png)
 
-1. Default va contenire des noms de variables.
+1. Default va contenire nos variables.
 2. Handlers: Sont des taches speciales qui se seront actives que via la directive "notify".
 3. Tasks: Ensemble de nos taches qui se deploierons sur les machines hosts.
 4. Templates: Permet de créer de nouveaux fichiers au format jinja2.
@@ -84,7 +83,7 @@ Demonstration du fonctionnement des roles en installent Nginx webserver et en re
  
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-07-08.png)
 
-Pour appeller l'une de ces variables utiliser la syntax: "{{ **nom_de_variable** }}", qui seront souvent appeller dans tasks.
+Pour appeller l'une de ces variables, utiliser la syntax: "{{ **nom_de_variable** }}", qui seront souvent appeller dans tasks.
 
 Notre page par default sera modifier de cette maniere: 
 
@@ -93,10 +92,10 @@ Notre page par default sera modifier de cette maniere:
 **__(cliquer pour voir le deploiement du roles)__**
 [![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2010-58-16.png)](https://asciinema.org/a/SgPUVITOapHD1PwHm0kFlAqMP)
 Les options -DC: 
-1. Pour montrer la difference dans les fichiers de configuration et lors de l'execution des taches.
-2. C Pour lancer le playbook en mode check. Cela ne va que simuller les changements, telechargements et mises en place des paquets par exemple etc. Option tres utile pour faire des tests et s'assurer que tout fonctionne bien. 
+1. **D** Pour montrer la difference dans les fichiers de configuration et lors de l'execution des taches.
+2. **C** Pour lancer le playbook en mode check. Cela ne va que simuller les changements, telechargements et mises en place des paquets par exemple etc. Option tres utile pour faire des tests et s'assurer que tout fonctionne bien. 
 
-Il y a une "erreur" a la fin car le playbook essaye de simulier le redemarage d'un service, nginx... Ce n'est pas possible, soit le service redemarre, soit il ne redemmare pas :)
+Il y a une "erreur" à la fin, car le playbook essaye de simuler le redémarrage d'un service, nginx… Ce n'est pas possible, soit le service redémarré, soit-il ne redémarre pas :)
 
 (**__cliquer pour voir le deploiement du roles)__**
 [![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2011-10-32.png)](https://asciinema.org/a/3sdVrff6tMoYslks06SHuqmO5)
@@ -130,14 +129,14 @@ Pour notre réseau LAN, celui-ci ne dispose que d'une seule route possible. Pour
 > Passage des paquets
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2017-43-57.png)
 
-### Mise en place des regles de pare-feu
+### Mise en place des règles de pare-feu
 
 Dans notre scenario, notre client doit contacter le serveur pour accéder à certains services. Objectif : uniquement autoriser la connexion à ces services, et depuis ce client uniquement. Nous mettrons en place certaines règles de pare-feu ayant ces effets. 
 
-Les regles a mettre en place: 
+Les règles à mettre en place : 
 
-> 1. Apache via les ports 80/443
-> 2. MariaDB via le port 3309
+> 1. Apache via 80/443
+> 2. MariaDB via le port 3306
 > 3. SSH via le port 22 
 > 4. Bloquer toute autre connections 
 
@@ -148,7 +147,7 @@ Les regles a mettre en place:
 
 Fail2ban agit à une couche différente de la couche réseau de niveau 3 d'un pare-feu. Celui-ci bloque les paquets du protocole TCP. Mais le port 22 est encore ouvert et des connexions peuvent toujours avoir lieux. C'est là que rentre en jeu le logiciel Fail2ban en surveillant les entrées des logs de no services. Fail2ban offre de nombreuses options pour sécuriser notre serveur, pour limiter les attaques par brutes-force ou DDOS.
 
-Les parametres a prendre en compte:
+Les options a prendre en compte quand nous configurerons Fail2ban pour le service ssh:
 1. bantime 10m (Définie la durée du bannissement)
 2. findtime 2m (Fourchette de temps pendant lequel les tentatives de connections amènent à un bannissement)
 3. maxretry 3 (nombre de tentatives maximum)
@@ -159,7 +158,7 @@ Les parametres a prendre en compte:
 ...
 
 # Script shell TCP: 
-### Vérifie les ports TCP en écoute sur une machine distante et qui applique une serie de règles IPtables laissant les connexions ouvertes sur ces ports, depuis une liste de machine authorises.
+### Vérifie les ports TCP en écoute sur une machine distante et qui applique une série de règles IPtables laissant les connexions ouvertes sur ces ports, depuis une liste de machine autorisés.
 
 #### Il nous faudrat:
 
@@ -168,7 +167,8 @@ Les parametres a prendre en compte:
 3. Faire Playbooks Ansible qui déploie le script sur le groupe de machines
 4. Ecrire et mettre en place un cron.
 
-IPTables est un logiciel de pare-feux inclut dans le Kernel, permettant de mettre en place des regles de traffic entrant et sortant.
+IPTables est un logiciel libre de pare-feux inclut dans le Kernel, permettant de mettre en place des regles de traffic entrant et sortant.
+
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-19-03.png)
 
@@ -178,8 +178,9 @@ IPTables est un logiciel de pare-feux inclut dans le Kernel, permettant de mettr
 
 
   **var=$(ss -tl4 | awk '/^LISTEN/ { split($4, a, ":"); print a[2];}')**  
-  AWK est un language utilise pour la manipulation, modification et triage de fichier.
- 
+  (AWK est un language utilise pour la manipulation, modification et triage de fichier.)
+  
+La commande iptables -L -v -n permet de voir quelles règles sont définies pour la table filter qui est la table par défaut lorsque non spécifiée. 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-43-01.png)
 
 
