@@ -2,10 +2,10 @@
 ## BIG work in progress...
 ## Here I will be describing the different projects and thechnologies I worked on during my internship.
 
-![:)](https://imgur.com/gallery/zPFhSqy)
+[:)](https://imgur.com/gallery/zPFhSqy)
 
 ## Hyperviseur Proxmox
-Proxmox est un loggiciel libre de virualisation et de gestion de parc informatique. J'ai installer Proxmox sur un serveur sur lequel j'efectuerais mes differentes taches et projet tout au long de ce stage.
+Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
 ## Gestion de partitions: LVM
