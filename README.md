@@ -1,3 +1,8 @@
+### Realistion en crous de formation.
+### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
+![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
+
+
 # Stage
 ## BIG work in progress...
 ## Here I will be describing the different projects and thechnologies I worked on during my internship.
@@ -6,7 +11,9 @@
 Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
-## Gestion de partitions: LVM
+## -Gestion de partitions: LVM
+## -Realisation professionnelles
+## Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
 
 La gestion des volumes logiques (LVM) est un système de gestion des disques utilisé pour gérer et organiser l'espace disque sur un système Linux. Il permet de créer des partitions virtuelles qui peuvent être redimensionnées et déplacées de manière dynamique, sans avoir à arrêter le système ou à démonter un système de fichiers.
 Les trois parties centralles de LVM:
@@ -15,7 +22,7 @@ Les trois parties centralles de LVM:
 2. Groupe de volume (GV) : Sont des collections de volumes physiques depuis lesquelles nos volumes logiques seront creers.
 3. Volumes logiques (LV) : Un volume logique est un périphérique de stockage virtuel qu'un système de fichiers peut utiliser.
 
-Tache : Il sera question d'implémenter un RAID1 sous LVM sur un serveur avec disque linéaire configuré avec RAID. Il sera question de créer un nouveau volume physique que nous convertirons par la suite en volume RAID et de re-attacher ce volume au volume déjà existant.
+Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec disque linéaire configuré avec RAID. Il sera question de créer un nouveau volume physique que nous convertirons par la suite en volume RAID et de re-attacher ce volume au volume déjà existant.
 
 ## Docker et DockerFile
 ...
