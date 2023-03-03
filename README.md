@@ -1,18 +1,41 @@
-### Realistion en crous de formation.
+## *Realistion en crous de formation.* ![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
+
 ### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
-![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
 
 
-# Stage
+## *Realisation en cours de formation.* ![GLPI:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
+
+### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes__
+
+## ![AUTH](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/serveur_authentification.pdf)
+
+### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique. Mise en place et vérification des niveaux d’habilitation associés à un service. Gestion des sauvegardes.
+
+## *Realisation en cours de formation.* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf)
+
+### Competences mises en oeuvre:
+
+
+## *Realisation en cours de formation.* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf)
+
+### Competences mises en oeuvre:
+
+## *Realisation en cours de formation.* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf)
+
+### Competences mises en oeuvre:
+
+
+# Realisations en cours de Stage:
+
 ## BIG work in progress...
 ## Here I will be describing the different projects and thechnologies I worked on during my internship.
 
 ## Hyperviseur Proxmox
+### Competences: Verifier les conditions de la continuite d'un service informatique.
 Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
 ## -Gestion de partitions: LVM
-### -https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdfRealisation professionnelles
 ### -Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
 
 La gestion des volumes logiques (LVM) est un système de gestion des disques utilisé pour gérer et organiser l'espace disque sur un système Linux. Il permet de créer des partitions virtuelles qui peuvent être redimensionnées et déplacées de manière dynamique, sans avoir à arrêter le système ou à démonter un système de fichiers.
@@ -199,6 +222,11 @@ IPTables est un logiciel libre de pare-feux inclut dans le Kernel, permettant de
   
 La commande iptables -L -v -n permet de voir quelles règles sont définies pour la table filter qui est la table par défaut lorsque non spécifiée. 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-43-01.png)
+
+
+## Mettre en place son environement d'apprantisage personnel:
+### Serveur autoheberger personnel + environement de bureau totalement personnalise avec gestionnaire de fenetre et pile de logiciels libre et open-sources. Server mail dedier.
+### Mise en place de service autoheberger libre a utilisation personnel. ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
 
 [:)](https://imgur.com/gallery/zPFhSqy)
 
