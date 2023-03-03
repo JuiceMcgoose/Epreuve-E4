@@ -1,11 +1,11 @@
-## *Realistion en crous de formation.* ![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
+## *Realistion en cours de formation.* ![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
 
 ### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
 
 
 ## *Realisation en cours de formation.* ![GLPI:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
 
-### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes__
+### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes/ Traiter les demandes concernant les services reseaux et systhems,applicatifs__
 
 ## ![AUTH](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/serveur_authentification.pdf)
 
