@@ -12,8 +12,8 @@ Proxmox est un logiciel libre de visualisation et de gestion de parc informatiqu
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
 ## -Gestion de partitions: LVM
-## -Realisation professionnelles
-## Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
+### -https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdfRealisation professionnelles
+### -Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
 
 La gestion des volumes logiques (LVM) est un système de gestion des disques utilisé pour gérer et organiser l'espace disque sur un système Linux. Il permet de créer des partitions virtuelles qui peuvent être redimensionnées et déplacées de manière dynamique, sans avoir à arrêter le système ou à démonter un système de fichiers.
 Les trois parties centralles de LVM:
