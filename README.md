@@ -1,28 +1,32 @@
 ## *Realistion en cours de formation.* ![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
 
-### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
+#### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
+
+## *Realisation en cours de foration.* ![Installation borne Wi-fi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
+
+#### Competences mises en oeuvre: 
 
 
 ## *Realisation en cours de formation.* ![GLPI:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
 
-### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes/ Traiter les demandes concernant les services reseaux et systhems,applicatifs__
+#### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes/ Traiter les demandes concernant les services reseaux et systhems,applicatifs__ / Recensement et identification des ressources numérique. 
 
-## ![AUTH](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/serveur_authentification.pdf)
+## ![Serveur d'authentification](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/serveur_authentification.pdf)
 
-### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique. Mise en place et vérification des niveaux d’habilitation associés à un service. Gestion des sauvegardes.
+#### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique. Mise en place et vérification des niveaux d’habilitation associés à un service. Gestion des sauvegardes.Vérification du respect des règles d’utilisation des ressources numériques
 
 ## *Realisation en cours de formation.* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf)
 
-### Competences mises en oeuvre:
+#### Competences mises en oeuvre:
 
 
 ## *Realisation en cours de formation.* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf)
 
-### Competences mises en oeuvre:
+#### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique/Vérification du respect des règles d’utilisation des ressources numériques/
 
 ## *Realisation en cours de formation.* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf)
 
-### Competences mises en oeuvre:
+#### Competences mises en oeuvre:
 
 
 # Realisations en cours de Stage:
@@ -36,7 +40,7 @@ Proxmox est un logiciel libre de visualisation et de gestion de parc informatiqu
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
 ## -Gestion de partitions: LVM
-### -Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
+#### -Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
 
 La gestion des volumes logiques (LVM) est un système de gestion des disques utilisé pour gérer et organiser l'espace disque sur un système Linux. Il permet de créer des partitions virtuelles qui peuvent être redimensionnées et déplacées de manière dynamique, sans avoir à arrêter le système ou à démonter un système de fichiers.
 Les trois parties centralles de LVM:
@@ -50,7 +54,7 @@ Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec d
 ## Docker et DockerFile
 ...
 
-## Nextcloud/LAMP Stack
+## Nextcloud/LAMP Stack: Deploiyer un service. Gerer des saubegardes. Recenser et indetifier les ressources numeriques.
 Nextcloud est un service de partage de fichiers libre et open-source qui nous donne contrôle sur nos fichiers, respect de nos documents privés et une forme avance de contrôle, car autogérés. Pour installer le service Nextcloud, il me sera nécessaire d'installer une pile de technologies complémentaires
 __(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
 
@@ -143,6 +147,9 @@ Il y a une "erreur" à la fin, car le playbook essaye de simuler le redémarrage
 #### A suire...
 
 # Lab reseau
+
+### Exploiter des referentiels, normes, et standards adoptees par le prestataire informatique. 
+
 Nous trouverons un client installé sous ![RockyLinux](https://rockylinux.org/), et un serveur hébergent différents services web sous Debian. Les deux se trouvant sur des réseaux différents. En intermédiaire, un pare-feu logiciel pfSense permettra le routage et le filtrage des connexions entre les deux réseaux.
 Ci-dessous un schéma du lab en question à mettre en place :
 ![lien du lab](https://github.com/JuiceMcgoose/assets/blob/main/lab_reseau_mehdi.drawio.png) 
@@ -227,6 +234,8 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 ## Mettre en place son environement d'apprantisage personnel:
 ### Serveur autoheberger personnel + environement de bureau totalement personnalise avec gestionnaire de fenetre et pile de logiciels libre et open-sources. Server mail dedier.
 ### Mise en place de service autoheberger libre a utilisation personnel. ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
+
+## Gerer son indentite professionnelle: ![CV](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/CV.pdf)
 
 [:)](https://imgur.com/gallery/zPFhSqy)
 
