@@ -1,13 +1,13 @@
-## *Realistion en cours de formation.* ![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
+## *Realistion faite en cours de formation.* ![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
 
 #### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
 
-## *Realisation en cours de foration.* ![Installation borne Wi-fi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
+## *Realisation faite en cours de foration.* ![Installation borne Wi-fi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
 
 #### Competences mises en oeuvre: 
 
 
-## *Realisation en cours de formation.* ![GLPI:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
+## *Realisation faite en cours de formation.* ![GLPI:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
 
 #### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes/ Traiter les demandes concernant les services reseaux et systhems,applicatifs__ / Recensement et identification des ressources numérique. 
 
@@ -15,16 +15,16 @@
 
 #### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique. Mise en place et vérification des niveaux d’habilitation associés à un service. Gestion des sauvegardes.Vérification du respect des règles d’utilisation des ressources numériques
 
-## *Realisation en cours de formation.* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf)
+## *Realisation faite en cours de formation.* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf)
 
 #### Competences mises en oeuvre:
 
 
-## *Realisation en cours de formation.* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf)
+## *Realisation faite en cours de formation.* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf)
 
 #### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique/Vérification du respect des règles d’utilisation des ressources numériques/
 
-## *Realisation en cours de formation.* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf)
+## *Realisation faite en cours de formation.* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf)
 
 #### Competences mises en oeuvre:
 
