@@ -1,13 +1,13 @@
-## *Realistion faite en cours de formation.* ![Routage sur vlan:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
+## *Realistion faite en cours de formation:* ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
 
 #### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
 
-## *Realisation faite en cours de foration.* ![Installation borne Wi-fi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
+## *Realisation faite en cours de foration:* ![Installation borne Wi-fi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
 
 #### Competences mises en oeuvre: 
 
 
-## *Realisation faite en cours de formation.* ![GLPI:](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
+## *Realisation faite en cours de formation:* ![GLPI](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
 
 #### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes/ Traiter les demandes concernant les services reseaux et systhems,applicatifs__ / Recensement et identification des ressources numérique. 
 
@@ -15,16 +15,16 @@
 
 #### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique. Mise en place et vérification des niveaux d’habilitation associés à un service. Gestion des sauvegardes.Vérification du respect des règles d’utilisation des ressources numériques
 
-## *Realisation faite en cours de formation.* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf)
+## *Realisation faite en cours de formation:* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf)
 
 #### Competences mises en oeuvre:
 
 
-## *Realisation faite en cours de formation.* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf)
+## *Realisation faite en cours de formation:* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf)
 
 #### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique/Vérification du respect des règles d’utilisation des ressources numériques/
 
-## *Realisation faite en cours de formation.* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf)
+## *Realisation faite en cours de formation:* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf)
 
 #### Competences mises en oeuvre:
 
@@ -35,7 +35,7 @@
 ## Here I will be describing the different projects and thechnologies I worked on during my internship.
 
 ## Hyperviseur Proxmox
-### Competences: Verifier les conditions de la continuite d'un service informatique.
+### Competences: Verifier les conditions de la continuite d'un service informatique. Gerer des sauvegardes.
 Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
@@ -148,7 +148,7 @@ Il y a une "erreur" à la fin, car le playbook essaye de simuler le redémarrage
 
 # Lab reseau
 
-### Exploiter des referentiels, normes, et standards adoptees par le prestataire informatique. 
+### Exploiter des referentiels, normes, et standards adoptees par le prestataire informatique. Evaluer les indicateurs de suivie d'un projet et analyser les ecarts.
 
 Nous trouverons un client installé sous ![RockyLinux](https://rockylinux.org/), et un serveur hébergent différents services web sous Debian. Les deux se trouvant sur des réseaux différents. En intermédiaire, un pare-feu logiciel pfSense permettra le routage et le filtrage des connexions entre les deux réseaux.
 Ci-dessous un schéma du lab en question à mettre en place :
@@ -232,7 +232,7 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 
 
 ## Mettre en place son environement d'apprantisage personnel:
-### Serveur autoheberger personnel + environement de bureau totalement personnalise avec gestionnaire de fenetre et pile de logiciels libre et open-sources. Server mail dedier.
+### J'autoheberge plusieurs services axes vers une phylosophye de logiciel libre et open-source, en ayant pour objectif d'avoir plus de controle sur mes donnes + environement de bureau totalement personnalise avec gestionnaire de fenetre et pile de logiciels libre et open-sources. Server mail dedier.
 ### Mise en place de service autoheberger libre a utilisation personnel. ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
 
 ## Gerer son indentite professionnelle: ![CV](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/CV.pdf)
