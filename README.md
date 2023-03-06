@@ -176,7 +176,7 @@ Pour notre réseau LAN, celui-ci ne dispose que d'une seule route possible. Pour
 > Passage des paquets
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-01-31%2017-43-57.png)
 
-### Mise en place des règles de pare-feu
+### Mise en place des règles de pare-feux
 
 Dans notre scenario, notre client doit contacter le serveur pour accéder à certains services. Objectif : uniquement autoriser la connexion à ces services, et depuis ce client uniquement. Nous mettrons en place certaines règles de pare-feu ayant ces effets. 
 
@@ -206,6 +206,7 @@ Les options a prendre en compte quand nous configurerons Fail2ban pour le servic
 
 # Script shell TCP: 
 ### Vérifie les ports TCP en écoute sur une machine distante et qui applique une série de règles IPtables laissant les connexions ouvertes sur ces ports, depuis une liste de machine autorisés.
+### Competences: Réaliser les tests d’intégration et d’acceptation d’un service. Planifier les activités. Déployer un service. 
 
 #### Il nous faudrat:
 
@@ -232,10 +233,25 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 
 
 ## Mettre en place son environement d'apprantisage personnel:
-### J'autoheberge plusieurs services axes vers une phylosophye de logiciel libre et open-source, en ayant pour objectif d'avoir plus de controle sur mes donnes + environement de bureau totalement personnalise avec gestionnaire de fenetre et pile de logiciels libre et open-sources. Server mail dedier.
-### Mise en place de service autoheberger libre a utilisation personnel. ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
+### ArchLInux + gestionaire de fenetres DWM/DMENU
 
-## Gerer son indentite professionnelle: ![CV](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/CV.pdf)
+### J'autoheberge plusieurs services axes vers une philosophie de logiciel libre et open-source, en ayant pour objectif d'avoir plus de controle sur mes donnes + environement de bureau personnalise avec gestionnaire de fenetre et pile de logiciels libre et open-sources.(Zathura, neomutt, Pacman, ST, etc).
+### Mise en place d'un server mail (90% fonctionnelle )
+![mx record](https://github.com/JuiceMcgoose/assets/blob/main/mx_record.png)
+### Les enregistrements MX sont utilisés pour acheminer les mails électronique associé à un nom de domaine, vers le serveur de messagerie approprié, par exemple, mail.powerful.software dans mons cas.
+
+### Mise en place d'un service autoheberger sous licence libre a utilisation personnel. Ici, un logiciel de gestion et de sauvegardes de photos/videos simillaire a GooglePhoto deployes via une image Docker.
+### ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
+
+
+## Gerer son indentite professionnelle: 
+### https://github.com/JuiceMcgoose/ 
+
+![CV](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/CV.pdf)
+
+## Outils et stratégies de veille informationnelle.
+### https://www.reddit.com/r/ITCareerQuestions/
+### https://news.ycombinator.com/ 
 
 [:)](https://imgur.com/gallery/zPFhSqy)
 
