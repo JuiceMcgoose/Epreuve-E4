@@ -1,30 +1,30 @@
-## *Realistion faite en cours de formation:* ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
+## *Realistion faite en cours de formation:* ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf) (30/06/2022)
 
 #### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
 
-## *Realisation faite en cours de foration:* ![Installation borne Wi-fi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
+## *Realisation faite en cours de foration:* ![Installation borne Wi-fi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf) (22/03/2022)
 
 #### Competences mises en oeuvre: 
 
 
-## *Realisation faite en cours de formation:* ![GLPI](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf)
+## *Realisation faite en cours de formation:* ![GLPI](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/GLPI-1.pdf) (12/05/2022)
 
 #### Competence mise en oeuvre: __Collecter, suivre et orienter des demandes/ Traiter les demandes concernant les services reseaux et systhems,applicatifs__ / Recensement et identification des ressources numérique. 
 
-## ![Serveur d'authentification](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/serveur_authentification.pdf)
+## ![Serveur d'authentification](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/serveur_authentification.pdf) (05/01/2022)
 
 #### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique. Mise en place et vérification des niveaux d’habilitation associés à un service. Gestion des sauvegardes.Vérification du respect des règles d’utilisation des ressources numériques
 
-## *Realisation faite en cours de formation:* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf)
+## *Realisation faite en cours de formation:* ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf) (22/02/2022)
 
 #### Competences mises en oeuvre:
 
 
-## *Realisation faite en cours de formation:* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf)
+## *Realisation faite en cours de formation:* ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf) (07/11/2022)
 
 #### Competences mises en oeuvre: Exploitation des référentiels, normes et standards adoptés par le prestataire informatique/Vérification du respect des règles d’utilisation des ressources numériques/
 
-## *Realisation faite en cours de formation:* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf)
+## *Realisation faite en cours de formation:* ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf) (24/11/2022)
 
 #### Competences mises en oeuvre:
 
