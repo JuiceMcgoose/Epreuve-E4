@@ -31,9 +31,6 @@
 
 # Realisations en cours de Stage:
 
-## BIG work in progress...
-## Here I will be describing the different projects and thechnologies I worked on during my internship.
-
 ## Hyperviseur Proxmox
 ### Competences: Verifier les conditions de la continuite d'un service informatique. Gerer des sauvegardes.
 Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
@@ -70,7 +67,9 @@ Le paquet doit être localement installé sur le serveur/client avant de pouvoir
 
 ## Intro
 
+### Competences:
 #### Ansible est un outil libre et open-source permettant de déployer et de maintenir ses applications et ses systèmes. Il utilise le protocole _SSH_ pour communiquer avec les hôtes distants. Les fichiers de configuration s'écrivent en langage *YAML*.
+
 
 ## L'inventaire
 #### Les machines hôtes sur lesquelles serrons déployées les playbooks sont stockés sous le fichier /ansible/hosts. Elles peuvent être regroupées sous des groupes qui seront ensuite faits référence dans nos playbooks.
@@ -240,7 +239,7 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 ![mx record](https://github.com/JuiceMcgoose/assets/blob/main/mx_record.png)
 ### Les enregistrements MX sont utilisés pour acheminer les mails électronique associé à un nom de domaine, vers le serveur de messagerie approprié, par exemple, mail.powerful.software dans mons cas.
 
-### Mise en place d'un service autoheberger sous licence libre a utilisation personnel. Ici, un logiciel de gestion et de sauvegardes de photos/videos simillaire a GooglePhoto deployes via une image Docker.
+### Mise en place d'un service autoheberger sous licence libre a utilisation personnel. Ici, un logiciel de gestion et de sauvegardes de photos/videos simillaire a GooglePhoto deployes via une image DockerCompose.
 ### ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
 
 
@@ -250,8 +249,19 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 ![CV](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/CV.pdf)
 
 ## Outils et stratégies de veille informationnelle.
+
+### Ci-dessous les principales sources d'information que j'utilise pour ma veille informationnelle:
+
 ### https://www.reddit.com/r/ITCareerQuestions/
+#### Communauté conçu pour aider toute personne travaillant dans le domaine de l'informatique ou intéressée par celui-ci à poser des questions relatives à sa carrière, ou future carrière. M'a beaucoup aidé pour me rendre compte des differents choix de carrieres venants de professionnels.
+
+### https://www.reddit.com/r/networking/
+#### Discussion sur les réseaux d'entreprise. protocles et reseaux informatique -- Routeurs, commutateurs, le sans fil, les pare-feu etx. Beaucoup d'informations sur Cisco, Juniper...
+
 ### https://news.ycombinator.com/ 
+
+### https://www.reddit.com/r/cybersecurity/
+#### Une communauté pour les professionnels techniques actuels ou en devenir afin de discuter de la cybersécurité, des menaces, etc.
 
 [:)](https://imgur.com/gallery/zPFhSqy)
 
