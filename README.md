@@ -1,4 +1,19 @@
-## *Realistion faite en cours de formation:* ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf) (30/06/2022)
+# Sommaire:
+
+1. [Projets realises en cours de formation.](#projets-realises-en-cours-de-formation)
+	1. [Routage sur vlan](#routage-sur-vlan)
+
+
+
+
+
+
+
+
+
+
+
+# ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf) (30/06/2022)
 
 #### Competence mises en oeuvre: Mettre en place et verifier les niveaux d'habilitation associes a un service.
 
@@ -110,6 +125,7 @@ Démonstration du fonctionnement des rôles en installent Nginx webserver et en 
 3. Tasks: Ensemble de nos taches qui se deploierons sur les machines hosts.
 4. Templates: Permet de créer de nouveaux fichiers au format jinja2.
 
+# Projets realises en cours de formation
 > Contenue du fichier tasks: 
   ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-49-01.png)
   
@@ -241,6 +257,11 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 
 ### Mise en place d'un service autoheberger sous licence libre a utilisation personnel. Ici, un logiciel de gestion et de sauvegardes de photos/videos simillaire a GooglePhoto deployes via une image DockerCompose.
 ### ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
+
+### VIM
+
+#### Vim est un éditeur de texte libre et gratuit, basé sur une l'interface de commandes et hautement personnalisable pour Unix.
+
 
 
 ## Gerer son indentite professionnelle: 
