@@ -16,14 +16,17 @@
 	2. [Installation borne Wi-Fi](#borne-wifi)
 	3. [GLPI](#glpi)
 	4. [Serveur d'authentification](#serveur-dauthentification)
-	5. [Annuaire LDAP](#annuaire-ldap)
+	5. [Installation service d'annuaire](#annuaire-ldap)
 	6. [Partage de fichiers](#partage-de-fichiers)
 	7. [Active Directory](#active-directory)
 3. [Projets realises en millieu professionel](#realisations-en-cours-de-stage)
 	1. [Proxmox](#hyperviseur-proxmox)
 	2. [LogicalVolumeManagement](#gestion-de-partitions-lvm)
-	3. [Ansible](#working-with-ansible)
-	4. [Lab Reseau](#lab-reseau)
+	3. [Nextcloud + pile LAMP](#nextcloud-+-pile-lamp)
+	4. [Rocky Linux](#rocky-linux-+-cockpit)
+	5. [Ansible](#working-with-ansible)
+	6. [Lab Reseau](#lab-reseau)
+	7. [Script shell TCP](#script-shell-tcp)
 4. [VIM](#vim)
 5. [Outils et stratégies de veille informationnelle.](#outils-et-stratégies-de-veille-informationnelle)
 
@@ -36,8 +39,6 @@
 
 
 
-
-
 # Projets realises en cours de formation
 
 ## Routage sur vlan
@@ -46,7 +47,9 @@
 ### Competence mises en oeuvre: 
 
 1. Mettre en place et verifier les niveaux d'habilitation associes a un service.
-2. deux
+2. Verifier les conditions de la continuite d'un service informatique.
+3. Analyser les objectifs et les modalites d'organisation d'un projet.
+4. Realiser les test d'integration et d'acceptation d'un service
 
 ## Borne wifi
 ### (22/03/2022)
@@ -77,25 +80,31 @@
 ### (22/02/2022)
 ### ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf) 
 ### Competences mises en oeuvre:
+
 1. Exploitation des référentiels, normes et standards adoptés par le prestataire informatique
 2. Mise en place et vérification des niveaux d’habilitation associés à un service
 3. Gestion des sauvegardes
 4. Vérification du respect des règles d’utilisation des ressources numériques
 5. Déploiement d’un service
 
-## Partage de fichiers
+## Partage de fichiers (Docker)
 ### (07/11/2022)
 ### ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf) 
 ### Competences mises en oeuvre: 
 
 1. Exploitation des référentiels, normes et standards adoptés par le prestataire informatique
 2. Vérification du respect des règles d’utilisation des ressources numériques
+3. Mettre en place et verifier les niveaux d'habilitation associes a un service
 
 
 ## Active Directory
 ### (24/11/2022)
 ### ![ActiveDirectory](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/activedirectory_mehdi-3.pdf) (24/11/2022)
 ### Competences mises en oeuvre:
+
+1. Analyser les objectifs et les modalites d'oranisation d'un projet. 
+2. Recenser et identifier les ressources numeriques.
+3. Deployer un service.
 
 
 # Realisations en cours de Stage:
@@ -120,13 +129,18 @@ Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec d
 ## Docker et DockerFile
 ...
 
-## Nextcloud/LAMP Stack: Deploiyer un service. Gerer des saubegardes. Recenser et indetifier les ressources numeriques.
-Nextcloud est un service de partage de fichiers libre et open-source qui nous donne contrôle sur nos fichiers, respect de nos documents privés et une forme avance de contrôle, car autogérés. Pour installer le service Nextcloud, il me sera nécessaire d'installer une pile de technologies complémentaires
-__(LAMP/STACK Linux, Apache, mariaDB, PHP)__. Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
+## Nextcloud + pile LAMP
 
+### Nextcloud est un service de partage de fichiers libre et open-source qui nous donne contrôle sur nos fichiers, respect de nos documents privés et une forme avance de contrôle, car autogérés. Il m'a ete demande d'installer ce service pour me faire decouvrire les differents elements qui le constitue, de plus, Nextcloud etait l'un des logiciels au centre du fonctionnement de l'equipe que j'avais integres. Pour installer le service Nextcloud, il nous sera nécessaire d'installer une pile de technologies complémentaires; (LAMP/STACK Linux, Apache, mariaDB, PHP). Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
 
-## RockyLinux/cockpit
-...
+### Competences: 
+
+1. Deploiyer un service. 
+2. Gerer des saubegardes. 
+3. Recenser et indetifier les ressources numeriques.
+
+## RockyLinux+cockpit
+
 Cockpit est un logiciel de gestion de serveur avec interface web. Pour les utilisateurs, il leur permet d'avoir acceer a un tableau de bord sur la machine, et de ne pas avoir à utiliser l'interface de commandes, mais d'avoir néanmoins une interface plus lisible et légère que d'installer un environnement de bureau sur le serveur. 
 Le paquet doit être localement installé sur le serveur/client avant de pouvoir accéder a l'interface web (machine-IP :9090). J'installerais egallement un module de stockage complementaire, qui n'est pas la par defaut, via un role Ansible.
 
@@ -181,7 +195,6 @@ Démonstration du fonctionnement des rôles en installent Nginx webserver et en 
 3. Tasks: Ensemble de nos taches qui se deploierons sur les machines hosts.
 4. Templates: Permet de créer de nouveaux fichiers au format jinja2.
 
-# Projets realises en cours de formation
 > Contenue du fichier tasks: 
   ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2009-49-01.png)
   
