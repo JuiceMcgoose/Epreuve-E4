@@ -9,9 +9,23 @@
 	5. [Annuaire LDAP](#annuaire-ldap)
 	6. [Partage de fichiers](#partage-de-fichiers)
 	7. [Active Directory](#active-directory)
+3. [Projets realises en millieu professionel](#realisations-en-cours-de-stage)
+	1. [Proxmox](#hyperviseur-proxmox)
+	2. [LogicalVolumeManagement](#gestion-de-partitions-lvm)
+	3. [Ansible](#working-with-ansible)
+	4. [Lab Reseau](#lab-reseau)
+
+```ascii
+.___        __                    .___             __  .__               
+|   | _____/  |________  ____   __| _/_ __   _____/  |_|__| ____   ____  
+|   |/    \   __\_  __ \/  _ \ / __ |  |  \_/ ___\   __\  |/  _ \ /    \ 
+|   |   |  \  |  |  | \(  <_> ) /_/ |  |  /\  \___|  | |  (  <_> )   |  \
+|___|___|  /__|  |__|   \____/\____ |____/  \___  >__| |__|\____/|___|  /
+         \/                        \/           \/                    \/ 
+```
 
 
-# Introduction: 
+### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques robustes qui répondent aux besoins de prestataires informatique, par example. Ces differens projets mobillisent les competences du bloc, et pour chaques projets les competences mobilisee seront precices. 
 
 
 
@@ -21,7 +35,7 @@
 
 ## Routage sur vlan
 ### Date de realisation: (30/06/2022) 
-### ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf) (30/06/2022)
+### ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
 ### Competence mises en oeuvre: 
 
 1. Mettre en place et verifier les niveaux d'habilitation associes a un service.
@@ -32,7 +46,7 @@
 
 ### ![Borne-wifi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
 
-### Competences mises en oeuvre: 
+### Competences mises en oeuvre:
 
 
 
@@ -112,12 +126,13 @@ Le paquet doit être localement installé sur le serveur/client avant de pouvoir
 
 ## Intro
 
+### Ansible est un outil d'automatisation open-source qui permet aux utilisateurs d'automatiser des tâches informatiques telles que la gestion de la configuration, le déploiement d'applications etc. Ansible est sans agent, ce qui signifie qu'il ne nécessite pas l'installation de logiciels sur les nœuds gérés, ce qui facilite son utilisation et le deploiement de configurations vers les hotes. Les roles et "playbooks" s'ecrivent en language YAML, simple et lisible.
+
 ### Competences:
-#### Ansible est un outil libre et open-source permettant de déployer et de maintenir ses applications et ses systèmes. Il utilise le protocole _SSH_ pour communiquer avec les hôtes distants. Les fichiers de configuration s'écrivent en langage *YAML*.
 
 
 ## L'inventaire
-#### Les machines hôtes sur lesquelles serrons déployées les playbooks sont stockés sous le fichier /ansible/hosts. Elles peuvent être regroupées sous des groupes qui seront ensuite faits référence dans nos playbooks.
+#### Les machines hôtes sur lesquelles serrons déployées les playbooks sont stockés sous le fichier /ansible/hosts. Elles peuvent être regroupées sous des groupes qui seront ensuite faits référence plus tard dans nos playbooks.
 
 ![](file:///home/mehdi.allag/Pictures/Screenshot%20from%202023-01-17%2017-07-53.png)
 
@@ -131,6 +146,7 @@ Ci-dessous un example de Playbook constitue d'un seul "play" et de deux taches.
 ![image](https://user-images.githubusercontent.com/78588391/212954775-68950203-497d-437b-9d17-4587a7b812ba.png)
 
 #### C'est apres la directive task que les actions pour notre tache vont etre definis.
+
 1. name: Description simple de la tache
 2. ansible.builtin.package: Module Ansible qui va automatiquement utiliser le module specifique au gestionaire de paquet de l'hote(ansible.builtin.yum, ansible.builtin.aot etc). Pratique car nous evite donc de definir le gestionaire de paquets de chacunes des distributions.
 3. name: nom du paquet a installer
@@ -188,8 +204,6 @@ Il y a une "erreur" à la fin, car le playbook essaye de simuler le redémarrage
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2015-00-01.png)
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2014-59-05.png)
 
-
-#### A suire...
 
 # Lab reseau
 
