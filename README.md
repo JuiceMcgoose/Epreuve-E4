@@ -1,13 +1,13 @@
-```ascii
-
-	 ____                                                                                          
+```ascii                                                                                    
+ ____                                                                                          
 /\  _`\                                                  __                                    
 \ \,\L\_\     ___     ___ ___      ___ ___       __     /\_\    _ __     __               __   
  \/_\__ \    / __`\ /' __` __`\  /' __` __`\   /'__`\   \/\ \  /\`'__\ /'__`\            /\_\  
    /\ \L\ \ /\ \L\ \/\ \/\ \/\ \ /\ \/\ \/\ \ /\ \L\.\_  \ \ \ \ \ \/ /\  __/            \/_/_ 
    \ `\____\\ \____/\ \_\ \_\ \_\\ \_\ \_\ \_\\ \__/.\_\  \ \_\ \ \_\ \ \____\             /\_\
-    \/_____/ \/___/  \/_/\/_/\/_/ \/_/\/_/\/_/ \/__/\/_/   \/_/  \/_/  \/____/             \/_/
-                                                                                                                        
+    \/_____/ \/___/  \/_/\/_/\/_/ \/_/\/_/\/_/ \/__/\/_/   \/_/  \/_/  \/____/             \/_/  
+    
+    
 ```
 
 1. [Introduction](#introduction)
@@ -30,6 +30,7 @@
                                                                                                    
 
 
+# Introduction
 
 ### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques robustes qui répondent aux besoins de prestataires informatique, par example. Ces differens projets mobillisent les competences du bloc, et pour chaques projets les competences mobilisee seront precices.
 
@@ -49,9 +50,7 @@
 
 ## Borne wifi
 ### (22/03/2022)
-
 ### ![Borne-wifi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
-
 ### Competences mises en oeuvre:
 
 
@@ -78,6 +77,11 @@
 ### (22/02/2022)
 ### ![LDAP](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/Installation%20du%20service%20d%E2%80%99annuaire%20LDAP%20.pdf) 
 ### Competences mises en oeuvre:
+1. Exploitation des référentiels, normes et standards adoptés par le prestataire informatique
+2. Mise en place et vérification des niveaux d’habilitation associés à un service
+3. Gestion des sauvegardes
+4. Vérification du respect des règles d’utilisation des ressources numériques
+5. Déploiement d’un service
 
 ## Partage de fichiers
 ### (07/11/2022)
@@ -101,8 +105,8 @@
 Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
-## -Gestion de partitions: LVM
-#### -Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
+## Gestion de partitions LVM
+#### Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
 
 La gestion des volumes logiques (LVM) est un système de gestion des disques utilisé pour gérer et organiser l'espace disque sur un système Linux. Il permet de créer des partitions virtuelles qui peuvent être redimensionnées et déplacées de manière dynamique, sans avoir à arrêter le système ou à démonter un système de fichiers.
 Les trois parties centralles de LVM:
