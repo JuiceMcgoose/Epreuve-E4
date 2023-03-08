@@ -1,4 +1,14 @@
-# Sommaire:
+```ascii
+
+	 ____                                                                                          
+/\  _`\                                                  __                                    
+\ \,\L\_\     ___     ___ ___      ___ ___       __     /\_\    _ __     __               __   
+ \/_\__ \    / __`\ /' __` __`\  /' __` __`\   /'__`\   \/\ \  /\`'__\ /'__`\            /\_\  
+   /\ \L\ \ /\ \L\ \/\ \/\ \/\ \ /\ \/\ \/\ \ /\ \L\.\_  \ \ \ \ \ \/ /\  __/            \/_/_ 
+   \ `\____\\ \____/\ \_\ \_\ \_\\ \_\ \_\ \_\\ \__/.\_\  \ \_\ \ \_\ \ \____\             /\_\
+    \/_____/ \/___/  \/_/\/_/\/_/ \/_/\/_/\/_/ \/__/\/_/   \/_/  \/_/  \/____/             \/_/
+                                                                                                                        
+```
 
 1. [Introduction](#introduction)
 2. [Projets realises en cours de formation.](#projets-realises-en-cours-de-formation)
@@ -14,20 +24,14 @@
 	2. [LogicalVolumeManagement](#gestion-de-partitions-lvm)
 	3. [Ansible](#working-with-ansible)
 	4. [Lab Reseau](#lab-reseau)
+4. [VIM](#vim)
+5. [Outils et stratégies de veille informationnelle.](#outils-et-stratégies-de-veille-informationnelle)
 
-```ascii
- ______               __                       __                       __                              
-/\__  _\             /\ \__                   /\ \                     /\ \__    __                     
-\/_/\ \/      ___    \ \ ,_\   _ __    ___    \_\ \    __  __    ___   \ \ ,_\  /\_\     ___     ___    
-   \ \ \    /' _ `\   \ \ \/  /\`'__\ / __`\  /'_` \  /\ \/\ \  /'___\  \ \ \/  \/\ \   / __`\ /' _ `\  
-    \_\ \__ /\ \/\ \   \ \ \_ \ \ \/ /\ \L\ \/\ \L\ \ \ \ \_\ \/\ \__/   \ \ \_  \ \ \ /\ \L\ \/\ \/\ \ 
-    /\_____\\ \_\ \_\   \ \__\ \ \_\ \ \____/\ \___,_\ \ \____/\ \____\   \ \__\  \ \_\\ \____/\ \_\ \_\
-    \/_____/ \/_/\/_/    \/__/  \/_/  \/___/  \/__,_ /  \/___/  \/____/    \/__/   \/_/ \/___/  \/_/\/_/
-                                                                                                        
-```
+                                                                                                   
 
 
-### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques robustes qui répondent aux besoins de prestataires informatique, par example. Ces differens projets mobillisent les competences du bloc, et pour chaques projets les competences mobilisee seront precices. 
+
+### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques robustes qui répondent aux besoins de prestataires informatique, par example. Ces differens projets mobillisent les competences du bloc, et pour chaques projets les competences mobilisee seront precices.
 
 
 
@@ -307,7 +311,6 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 ### VIM
 
 #### Vim est un éditeur de texte libre et gratuit, basé sur une l'interface de commandes et hautement personnalisable pour Unix.
-
 
 
 ## Gerer son indentite professionnelle: 
