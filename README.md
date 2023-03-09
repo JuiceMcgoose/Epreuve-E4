@@ -40,13 +40,13 @@
 	3. [GLPI](#glpi)
 	4. [Serveur d'authentification](#serveur-dauthentification)
 	5. [Installation service d'annuaire](#annuaire-ldap)
-	6. [Partage de fichiers](#partage-de-fichiers-(docker))
+	6. [Partage de fichiers](#partage-de-fichiers-docker)
 	7. [Active Directory](#active-directory)
 3. [Projets realises en millieu professionel](#realisations-en-cours-de-stage)
 	1. [Proxmox](#hyperviseur-proxmox)
 	2. [LogicalVolumeManagement](#gestion-de-partitions-lvm)
-	3. [Nextcloud + pile LAMP](#nextcloud-+-pile-lamp)
-	4. [Rocky Linux](#rocky-linux-+-cockpit)
+	3. [Nextcloud + pile LAMP](#nextcloud-et-lamp)
+	4. [Rocky Linux](#rockylinux-et-cockpit)
 	5. [Ansible](#working-with-ansible)
 	6. [Lab Reseau](#lab-reseau)
 	7. [Script shell TCP](#script-shell-tcp)
@@ -150,9 +150,9 @@ Les trois parties centralles de LVM:
 Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec disque linéaire configuré avec RAID. Il sera question de créer un nouveau volume physique que nous convertirons par la suite en volume RAID et de re-attacher ce volume au volume déjà existant.
 
 ## Docker et DockerFile
-...
 
-## Nextcloud + pile LAMP
+
+## Nextcloud et LAMP
 
 ### Nextcloud est un service de partage de fichiers libre et open-source qui nous donne contrôle sur nos fichiers, respect de nos documents privés et une forme avance de contrôle, car autogérés. Il m'a ete demande d'installer ce service pour me faire decouvrire les differents elements qui le constitue, de plus, Nextcloud etait l'un des logiciels au centre du fonctionnement de l'equipe que j'avais integres. Pour installer le service Nextcloud, il nous sera nécessaire d'installer une pile de technologies complémentaires; (LAMP/STACK Linux, Apache, mariaDB, PHP). Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
 
@@ -162,7 +162,7 @@ Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec d
 2. Gerer des saubegardes. 
 3. Recenser et indetifier les ressources numeriques.
 
-## RockyLinux+cockpit
+## RockyLinux et cockpit
 
 Cockpit est un logiciel de gestion de serveur avec interface web. Pour les utilisateurs, il leur permet d'avoir acceer a un tableau de bord sur la machine, et de ne pas avoir à utiliser l'interface de commandes, mais d'avoir néanmoins une interface plus lisible et légère que d'installer un environnement de bureau sur le serveur. 
 Le paquet doit être localement installé sur le serveur/client avant de pouvoir accéder a l'interface web (machine-IP :9090). J'installerais egallement un module de stockage complementaire, qui n'est pas la par defaut, via un role Ansible.
@@ -348,9 +348,16 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 ### Mise en place d'un service autoheberger sous licence libre a utilisation personnel. Ici, un logiciel de gestion et de sauvegardes de photos/videos simillaire a GooglePhoto deployes via une image DockerCompose.
 ### ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
 
+*** 
+
 ### VIM
 
-#### Vim est un éditeur de texte libre et gratuit, basé sur une l'interface de commandes et hautement personnalisable pour Unix.
+#### Vim est un éditeur de texte libre et gratuit, basé sur une l'interface de commandes et hautement personnalisable pour Unix. Les fichiers sont au coeur de linux, et savoir se deplacer a l'interieur et manipuler leur contenue est tres important en tant qu'administrateur system. Les deux modes au seins de vim: 
+
+1. Insert mode
+2. Normal
+
+#### Pour en apprendre a utiliser VIM: > vimtutor au seins d'un terminal.
 
 
 ## Gerer son indentite professionnelle: 
