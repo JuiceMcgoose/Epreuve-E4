@@ -82,7 +82,7 @@
 ### ![Borne-wifi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
 ### Competences mises en oeuvre:
 
-*
+***
 
 ## GLPI
 ### (12/05/2022)
