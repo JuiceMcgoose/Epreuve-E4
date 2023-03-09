@@ -31,8 +31,6 @@
 					
 ```
 
-# 
-
 1. [Introduction](#introduction)
 2. [Projets realises en cours de formation.](#projets-realises-en-cours-de-formation)
 	1. [Routage sur vlan](#routage-sur-vlan)
@@ -53,6 +51,8 @@
 4. [VIM](#vim)
 5. [Outils et stratégies de veille informationnelle.](#outils-et-stratégies-de-veille-informationnelle)
 
+
+*** 
                                                                                                    
 
 
@@ -60,6 +60,7 @@
 
 ### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques robustes qui répondent aux besoins de prestataires informatique, par example. Ces differens projets mobillisent les competences du bloc, et pour chaques projets les competences mobilisee seront precices.
 
+***
 
 
 # Projets realises en cours de formation
@@ -74,12 +75,14 @@
 3. Analyser les objectifs et les modalites d'organisation d'un projet.
 4. Realiser les test d'integration et d'acceptation d'un service
 
+*** 
+
 ## Borne wifi
 ### (22/03/2022)
 ### ![Borne-wifi](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/ALLAG%20Mehdi%20wifi%20.pdf)
 ### Competences mises en oeuvre:
 
-
+*
 
 ## GLPI
 ### (12/05/2022)
@@ -90,6 +93,8 @@
 2. _Traiter les demandes concernant les services reseaux et systhems,applicatifs_
 3. _Recensement et identification des ressources numérique_
 
+***
+
 ## Serveur d'authentification
 ### (05/01/2022)
 ### ![Serveur d'authentification](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/serveur_authentification.pdf)
@@ -98,6 +103,8 @@
 1. _Exploitation des référentiels, normes et standards adoptés par le prestataire informatique_
 2. _Mise en place et vérification des niveaux d’habilitation associés à un service_
 3. _Gestion des sauvegardes.Vérification du respect des règles d’utilisation des ressources numériques_
+
+***
 
 ## Annuaire LDAP
 ### (22/02/2022)
@@ -110,6 +117,7 @@
 4. Vérification du respect des règles d’utilisation des ressources numériques
 5. Déploiement d’un service
 
+*** 
 ## Partage de fichiers (Docker)
 ### (07/11/2022)
 ### ![Partage de fichiers](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/filebrowser_allag_mehdi-2.pdf) 
@@ -119,6 +127,7 @@
 2. Vérification du respect des règles d’utilisation des ressources numériques
 3. Mettre en place et verifier les niveaux d'habilitation associes a un service
 
+***
 
 ## Active Directory
 ### (24/11/2022)
@@ -129,6 +138,7 @@
 2. Recenser et identifier les ressources numeriques.
 3. Deployer un service.
 
+***
 
 # Realisations en cours de Stage:
 
@@ -137,6 +147,9 @@
 Proxmox est un logiciel libre de visualisation et de gestion de parc informatique. J'ai installé Proxmox sur un serveur sur lequel j'effectuerais mes différentes tâches et projet tout au long de ce stage.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-31-41.png)
+
+***
+
 ## Gestion de partitions LVM
 #### Competence mise en oeuvre: Analyser les objectifs et les modalites d'organisation et mesurer leur visibilite/ Recenser et identifier les ressources numeriques.
 
@@ -151,6 +164,7 @@ Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec d
 
 ## Docker et DockerFile
 
+***
 
 ## Nextcloud et LAMP
 
@@ -162,12 +176,18 @@ Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec d
 2. Gerer des saubegardes. 
 3. Recenser et indetifier les ressources numeriques.
 
+***
+
 ## RockyLinux et cockpit
+
+***
 
 Cockpit est un logiciel de gestion de serveur avec interface web. Pour les utilisateurs, il leur permet d'avoir acceer a un tableau de bord sur la machine, et de ne pas avoir à utiliser l'interface de commandes, mais d'avoir néanmoins une interface plus lisible et légère que d'installer un environnement de bureau sur le serveur. 
 Le paquet doit être localement installé sur le serveur/client avant de pouvoir accéder a l'interface web (machine-IP :9090). J'installerais egallement un module de stockage complementaire, qui n'est pas la par defaut, via un role Ansible.
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2011-47-52.png)
+
+***
 
 # Working with Ansible: 
 
@@ -307,7 +327,8 @@ Les options a prendre en compte quand nous configurerons Fail2ban pour le servic
 
 
 ## Firewalld
-...
+
+***
 
 # Script shell TCP: 
 ### Vérifie les ports TCP en écoute sur une machine distante et qui applique une série de règles IPtables laissant les connexions ouvertes sur ces ports, depuis une liste de machine autorisés.
@@ -336,6 +357,7 @@ IPTables est un logiciel libre de pare-feux inclut dans le Kernel, permettant de
 La commande iptables -L -v -n permet de voir quelles règles sont définies pour la table filter qui est la table par défaut lorsque non spécifiée. 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-09%2017-43-01.png)
 
+***
 
 ## Mettre en place son environement d'apprantisage personnel:
 ### ArchLInux + gestionaire de fenetres DWM/DMENU
@@ -357,13 +379,16 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 1. Insert mode
 2. Normal
 
-#### Pour en apprendre a utiliser VIM: > vimtutor au seins d'un terminal.
+#### Pour apprendre a utiliser VIM: > vimtutor au seins d'un terminal.
 
+***
 
 ## Gerer son indentite professionnelle: 
 ### https://github.com/JuiceMcgoose/ 
 
 ![CV](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/CV.pdf)
+
+***
 
 ## Outils et stratégies de veille informationnelle.
 
@@ -379,6 +404,8 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 
 ### https://www.reddit.com/r/cybersecurity/
 #### Une communauté pour les professionnels techniques actuels ou en devenir afin de discuter de la cybersécurité, des menaces, etc.
+
+***
 
 [:)](https://imgur.com/gallery/zPFhSqy)
 
