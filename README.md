@@ -31,6 +31,8 @@
 					
 ```
 
+Ceci est une mise a jour via vscode bureau....
+
 1. [Introduction](#introduction)
 2. [Projets realises en cours de formation.](#projets-realises-en-cours-de-formation)
 	1. [Routage sur vlan](#routage-sur-vlan)
