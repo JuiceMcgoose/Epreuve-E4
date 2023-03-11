@@ -60,7 +60,7 @@ Ok this is a new test!
 
 # Introduction
 
-### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques robustes qui répondent aux besoins de prestataires informatique, par example. Ces differens projets mobillisent les competences du bloc, et pour chaques projets les competences mobilisee seront precices.
+### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques qui répondent aux besoins de prestataires informatique, par example. Ces differens projets mobillisent les competences du bloc-1, et pour chaques projets, les competences mobilisee sont precices.
 
 ***
 
@@ -191,14 +191,16 @@ Le paquet doit être localement installé sur le serveur/client avant de pouvoir
 
 ***
 
-# Working with Ansible: 
-
-## Intro
-
-### Ansible est un outil d'automatisation open-source qui permet aux utilisateurs d'automatiser des tâches informatiques telles que la gestion de la configuration, le déploiement d'applications etc. Ansible est sans agent, ce qui signifie qu'il ne nécessite pas l'installation de logiciels sur les nœuds gérés, ce qui facilite son utilisation et le deploiement de configurations vers les hotes. Les roles et "playbooks" s'ecrivent en language YAML, simple et lisible.
+# Ansible: 
 
 ### Competences:
 
+1. Competence uno
+2. competence dos
+
+## Intro
+
+### Ansible est un outil d'automatisation open-source qui permet aux utilisateurs d'automatiser des tâches informatiques telles que la gestion, la configuration, le déploiement d'applications etc. Ansible fonctionne sans agent, ce qui signifie qu'il ne nécessite pas l'installation de logiciels sur les nœuds gérés, ce qui facilite son utilisation et le deploiement de configurations vers les hotes. Les roles et "playbooks" s'ecrivent en language YAML.
 
 ## L'inventaire
 #### Les machines hôtes sur lesquelles serrons déployées les playbooks sont stockés sous le fichier /ansible/hosts. Elles peuvent être regroupées sous des groupes qui seront ensuite faits référence plus tard dans nos playbooks.
