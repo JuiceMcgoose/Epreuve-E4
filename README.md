@@ -30,8 +30,8 @@
 (_______/(_______)|/     \||/       (_______/   )_(   (_______/|/    )_)(_______/(_______/\_______)                                                                                              
 					
 ```
+Ok this is a new test!
 
-Ceci est une mise a jour via vscode bureau....
 
 1. [Introduction](#introduction)
 2. [Projets realises en cours de formation.](#projets-realises-en-cours-de-formation)
