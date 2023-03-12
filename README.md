@@ -34,7 +34,7 @@ Ok this is a new test!
 
 
 1. [Introduction](#introduction)
-2. [Projets realises en cours de formation.](#projets-realises-en-cours-de-formation)
+2. [Projets realises en cours de formation.](#projets-réalisés-en-cours-de-formation)
 	1. [Routage sur vlan](#routage-sur-vlan)
 	2. [Installation borne Wi-Fi](#borne-wifi)
 	3. [GLPI](#glpi)
@@ -42,16 +42,16 @@ Ok this is a new test!
 	5. [Installation service d'annuaire](#annuaire-ldap)
 	6. [Partage de fichiers](#partage-de-fichiers-docker)
 	7. [Active Directory](#active-directory)
-3. [Projets realises en millieu professionel](#realisations-en-cours-de-stage)
+3. [Projets realises en millieu professionel](#réalisations-en-cours-de-stage)
 	1. [Proxmox](#hyperviseur-proxmox)
 	2. [LogicalVolumeManagement](#gestion-de-partitions-lvm)
 	3. [Nextcloud + pile LAMP](#nextcloud-et-lamp)
 	4. [Rocky Linux](#rockylinux-et-cockpit)
-	5. [Ansible](#working-with-ansible)
-	6. [Lab Reseau](#lab-reseau)
+	5. [Ansible](#ansible)
+	6. [Lab Réseau](#lab-réseau)
 	7. [Script shell TCP](#script-shell-tcp)
 4. [VIM](#vim)
-5. [Outils et stratégies de veille informationnelle.](#outils-et-stratégies-de-veille-informationnelle)
+5. [Outils et stratégies de veille informationnelle.](#veille-informationnelle)
 
 
 *** 
@@ -277,19 +277,23 @@ Il y a une "erreur" à la fin, car le playbook essaye de simuler le redémarrage
 (**__cliquer pour voir le deploiement du roles)__**
 [![asciicast](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-06%2011-10-32.png)](https://asciinema.org/a/3sdVrff6tMoYslks06SHuqmO5)
 
-### Role et variables Ansible
+### Rôles et variables Ansible
 
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2014-59-41.png)
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2015-00-01.png)
 ![](https://github.com/JuiceMcgoose/assets/blob/main/Screenshot%20from%202023-02-10%2014-59-05.png)
 
 
-# Lab reseau
+# Lab réseau
 
-### Exploiter des referentiels, normes, et standards adoptees par le prestataire informatique. Evaluer les indicateurs de suivie d'un projet et analyser les ecarts.
+#### Compétences mise en œuvre : 
+
+1. Exploiter des référentiels, normes, et standards adoptés par le prestataire informatique. 
+2. Évaluer les indicateurs de suivie d'un projet et analyser les écarts.
 
 Nous trouverons un client installé sous ![RockyLinux](https://rockylinux.org/), et un serveur hébergent différents services web sous Debian. Les deux se trouvant sur des réseaux différents. En intermédiaire, un pare-feu logiciel pfSense permettra le routage et le filtrage des connexions entre les deux réseaux.
 Ci-dessous un schéma du lab en question à mettre en place :
+
 ![lien du lab](https://github.com/JuiceMcgoose/assets/blob/main/lab_reseau_mehdi.drawio.png) 
 
 ### Mise en place des différentes machines sous le nœud Proxmox:
@@ -405,6 +409,7 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 
 ***
 
+## Veille informationnelle
 
 ### Ci-dessous les principales sources d'information que j'utilise pour ma veille informationnelle :
 
