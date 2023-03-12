@@ -34,15 +34,15 @@ Ok this is a new test!
 
 
 1. [Introduction](#introduction)
-2. [Projets realises en cours de formation.](#projets-réalisés-en-cours-de-formation)
+2. [Projets réalisés en cours de formation.](#projets-réalisés-en-cours-de-formation)
 	1. [Routage sur vlan](#routage-sur-vlan)
 	2. [Installation borne Wi-Fi](#borne-wifi)
 	3. [GLPI](#glpi)
 	4. [Serveur d'authentification](#serveur-dauthentification)
-	5. [Installation service d'annuaire](#annuaire-ldap)
+	5. [Installation service d'annuaire, LDAP](#annuaire-ldap)
 	6. [Partage de fichiers](#partage-de-fichiers-docker)
 	7. [Active Directory](#active-directory)
-3. [Projets realises en millieu professionel](#réalisations-en-cours-de-stage)
+3. [Projets réalisés en milieu professionnel](#projets-réalisés-en-milieu-professionnel)
 	1. [Proxmox](#hyperviseur-proxmox)
 	2. [LogicalVolumeManagement](#gestion-de-partitions-lvm)
 	3. [Nextcloud + pile LAMP](#nextcloud-et-lamp)
@@ -142,7 +142,7 @@ Ok this is a new test!
 
 ***
 
-# Réalisations en cours de stage :
+# Projets réalisés en milieu professionnel
 
 ## Hyperviseur Proxmox
 ### Compétences: 
