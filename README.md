@@ -60,7 +60,7 @@ Ok this is a new test!
 
 # Introduction
 
-### C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques qui répondent aux besoins de prestataires informatiques, par exemple. Ces différents projets mobilisent les compétences du bloc-1, et pour claques projets, les compétences mobilisés sont précisés. 
+C'est avec plaisir que je vous présente mon portefeuille de compétences, qui met en valeur les projets sur lesquels j'ai travaillé en classe et au cours de mes stages. Dans ce portfolio, vous trouverez une collection de certains de mes projets, chacun démontrant ma capacité à développer et déployer des solutions informatiques qui répondent aux besoins de prestataires informatiques, par exemple. Ces différents projets mobilisent les compétences du bloc-1, et pour claques projets, les compétences mobilisés sont précisés. 
 
 ***
 
@@ -177,7 +177,7 @@ Tache : Il etait question d'implémenter un RAID1 sous LVM sur un serveur avec d
 
 ## Nextcloud et LAMP
 
-### Nextcloud est un service de partage de fichiers libre et open-source qui nous donne contrôle sur nos fichiers, respect de nos documents privés et une forme avance de contrôle, car autogérés. Il m'a été demandé d'installer ce service pour me faire découvrir les différents éléments qui le constituent, de plus, Nextcloud était l'un des logiciels au centre du fonctionnement de l'équipe que j'ai intégrée. Pour installer le service Nextcloud, il nous sera nécessaire d'installer une pile de technologies complémentaires ; (LAMP/STACK Linux, Apache, MariaDB, PHP). Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
+Nextcloud est un service de partage de fichiers libre et open-source qui nous donne contrôle sur nos fichiers, respect de nos documents privés et une forme avance de contrôle, car autogérés. Il m'a été demandé d'installer ce service pour me faire découvrir les différents éléments qui le constituent, de plus, Nextcloud était l'un des logiciels au centre du fonctionnement de l'équipe que j'ai intégrée. Pour installer le service Nextcloud, il nous sera nécessaire d'installer une pile de technologies complémentaires ; (LAMP/STACK Linux, Apache, MariaDB, PHP). Linux sera notre système d'exploitation, Apache notre serveur web, MariaDB le serveur de base de donnes, PHP le langage cote serveur gérant les pages dynamiques.  
 
 ### Compétences mises en œuvre :
 
