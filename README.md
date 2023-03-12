@@ -398,7 +398,8 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 1. Insert mode
 2. Normal mode 
 
-#### Pour apprendre a utiliser VIM: > vimtutor au seins d'un terminal.
+#### Pour apprendre à utiliser VIM au sein même de son terminal :
+> vimtutor 
 
 ***
 
