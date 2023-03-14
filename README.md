@@ -380,13 +380,13 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 ## Mettre en place son environement d'apprantisage personnel:
 ### ArchLInux + gestionaire de fenetres DWM/DMENU
 
-### J'autoheberge plusieurs services axes vers une philosophie de logiciel libre et open-source, en ayant pour objectif d'avoir plus de contrôle sur mes donnes + environnement de bureau personnalise avec gestionnaire de fenêtre et pile de logiciels libre et open-sources.(Zathura, Neomutt, Pacman, ST, etc).
-### Mise en place d'un server mail (90% fonctionnelle )
+J'autoheberge plusieurs services axes vers une philosophie de logiciel libre et open-source, en ayant pour objectif d'avoir plus de contrôle sur mes donnes + environnement de bureau personnalise avec gestionnaire de fenêtre et pile de logiciels libre et open-sources.(Zathura, Neomutt, Pacman, ST, etc).
+Mise en place d'un server mail (90% fonctionnelle )
 ![mx record](https://github.com/JuiceMcgoose/assets/blob/main/mx_record.png)
-### Les enregistrements MX sont utilisés pour acheminer les mails électronique associé à un nom de domaine, vers le serveur de messagerie approprié, par exemple, mail.powerful.software dans mon cas.
+Les enregistrements MX sont utilisés pour acheminer les mails électronique associé à un nom de domaine, vers le serveur de messagerie approprié, par exemple, mail.powerful.software dans mon cas.
 
 ### Mise en place d'un service que j'héberge, sous licence libre à utilisation personnelle. Ici, un logiciel de gestion et de sauvegardes de photos/vidéos similaire  a Google Photo déployés via une image Docker Compose.
-### ![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
+![immich](https://github.com/JuiceMcgoose/assets/blob/main/pic-window-230303-1401-04.png)
 
 *** 
 
@@ -419,10 +419,10 @@ La commande iptables -L -v -n permet de voir quelles règles sont définies pour
 ### https://www.reddit.com/r/networking/
 #### Discussion sur les réseaux d'entreprise. protocoles et réseaux informatique -- Routeurs, commutateurs, le sans fil, les pare-feu, etc. Beaucoup d'informations sur Cisco, Juniper...
 
-### https://news.ycombinator.com/ 
-
 ### https://www.reddit.com/r/cybersecurity/
 #### Une communauté pour les professionnels techniques actuels ou en devenir afin de discuter de la cybersécurité, des menaces, etc.
+
+### https://news.ycombinator.com/ 
 
 ***
 
