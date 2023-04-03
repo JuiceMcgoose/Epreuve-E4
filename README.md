@@ -67,7 +67,7 @@ C'est avec plaisir que je vous présente mon portefeuille de compétences, qui m
 # Projets réalisés en cours de formation
 
 ## Routage sur vlan
-### Date de realisation: (30/06/2022) 
+### Date de réalisation: (30/06/2022) 
 ### ![Routage sur vlan](https://github.com/JuiceMcgoose/Epreuve-E4/blob/main/routage_allag_mehdi%2Bvpn-1.pdf)
 ### Competence mises en oeuvre: 
 
